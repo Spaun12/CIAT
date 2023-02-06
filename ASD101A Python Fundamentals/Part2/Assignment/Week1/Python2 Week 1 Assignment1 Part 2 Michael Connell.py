@@ -25,8 +25,15 @@ def Quizzer():
 
 # Main program to call the Quizzer function
 if __name__ == '__main__':
-    success = Quizzer()
-    if success:
-        print("Good job!")
-    else:
-        print("Better luck next time.")
+    run_quizzer = True
+    while run_quizzer:
+        success = Quizzer()
+        if success:
+            print("Good job!")
+        else:
+            print("Better luck next time.")
+        # Ask the user if they want to run the quizzer again
+        repeat = input("Would you like to try again? (yes/no): ")
+        if repeat.lower() in ["no", "n"]:
+            run_quizzer = False
+            print("Have a nice day!")
