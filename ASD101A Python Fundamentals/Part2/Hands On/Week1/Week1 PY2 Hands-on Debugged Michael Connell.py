@@ -14,7 +14,7 @@ def func():
     # *Step one for correcting the code by completing the return statement
     return (x + y) / 2
 
-# Call the function and assign its return value to 'z' *Step two assigning the return value to 'z'
+# *Step two Call the function and assign its return value to 'z' 
 z = func()
 # Print the value of 'z', which is the average of the two numbers entered by the user
 print('The average of the two numbers you have entered is: ', z)
