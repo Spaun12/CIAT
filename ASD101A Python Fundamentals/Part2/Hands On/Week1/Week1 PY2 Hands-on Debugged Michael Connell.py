@@ -10,10 +10,11 @@ def func():
     x = float(input('Enter a number: '))
     # Get the second number from the user as a floating-point value and assign it to 'y'
     y = float(input('Enter a number: '))
-    # Return the average of the two numbers *Step one for correcting the code
-    return x + y / 2
+    # Return the average of the two numbers
+    # *Step one for correcting the code by completing the return statement
+    return (x + y) / 2
 
-# Call the function and assign its return value to 'z' *Step two for correcting the code
+# Call the function and assign its return value to 'z' *Step two assigning the return value to 'z'
 z = func()
 # Print the value of 'z', which is the average of the two numbers entered by the user
 print('The average of the two numbers you have entered is: ', z)
