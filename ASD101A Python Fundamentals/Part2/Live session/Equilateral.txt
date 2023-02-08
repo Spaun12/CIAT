@@ -1,0 +1,12 @@
+def is_equilateral(a, b, c):
+    return a == b == c
+
+a = float(input("Enter the length of the first side: "))
+b = float(input("Enter the length of the second side: "))
+c = float(input("Enter the length of the third side: "))
+
+if is_equilateral(a, b, c):
+    print("It's an equilateral triangle")
+else:
+    print("It's not an equilateral triangle")
+
