@@ -10,7 +10,7 @@ import random
 
 # Ask the user how many attempts they would like
 attempts = int(input("""Welcome to the Random Number Game! 
-            How many attempts would you like to guess the number? """))
+How many attempts would you like to guess the number? """))
 
 def guess_game(attempts):
     # Generate a random number between 1 and 100
@@ -25,7 +25,7 @@ def guess_game(attempts):
         if guess == number:
             # If the guess is correct, return a message indicating the user has won
             return f"You win! The number was {number}."
-
+            
         # Check if the guess is too high
         elif guess > number:
             print("Too high, try again.")
@@ -34,8 +34,9 @@ def guess_game(attempts):
         else:
             print("Too low, try again.")
 
-    # If the loop has ended, the user has not won, so return a message indicating they lost
+    # If the loop has ended, the user has not won, so return a message indicating the result
     return f"Almost! The number was {number}."
+
 
 # Start the game and print the result
 print(guess_game(attempts))
