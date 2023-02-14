@@ -1,26 +1,28 @@
 # Week 2: Hands On Exercise - File and List Michael Connell
 
-# Define a function to print the states in both descending and ascending order
 def print_states(states):
-    # Print header for the states in descending order
+    # Print the states in descending order
     print("States in descending order:")
-    # Loop through the list of states in reverse order and print each state
-    for state in reversed(states):
-        print(state)
-    # Print header for the states in ascending order
+    for i, state in enumerate(reversed(states)):
+        print("{:<23}".format(state), end="")
+        if (i + 1) % 4 == 0:
+            print()
+    print("\n")
+    # Print the states in ascending order
     print("States in ascending order:")
-    # Loop through the list of states in normal order and print each state
-    for state in states:
-        print(state)
+    for i, state in enumerate(states):
+        print("{:<23}".format(state), end="")
+        if (i + 1) % 4 == 0:
+            print()
 
-# Use a try/except block to handle any errors when opening the file
+# Use a try-except block to handle file handling operations
 try:
-    # Open the file "states.txt" for reading
+    # Open the file handle for reading "states.txt"
     with open("states.txt", "r") as file:
-        # Read the contents of the file and create a list of state names
-        states = [line.strip().split(".")[1].strip() for line in file]
-        # Call the function to print the states
+        # Read the state names from the file and store them in a list named states
+        states = [line.strip() for line in file]
+        # Call the function to print the states in both descending and ascending orders
         print_states(states)
-# If the file is not found, print an error message
 except FileNotFoundError:
+    # Print an error message if the file is not found
     print("File not found.")
