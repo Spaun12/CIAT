@@ -3,7 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 # Define a function that takes a syntax error message as input
 def search_for_syntax_error(error_message):
-    # Construct a search query by combining the error message with a search for Stack Overflow
+    # Construct a search query by combining the error 
+    # message with a search for Stack Overflow
     search_query = error_message + " site:stackoverflow.com"
     # Encode the search query as a URL
     search_url = "https://www.google.com/search?q=" + search_query
@@ -11,7 +12,6 @@ def search_for_syntax_error(error_message):
     response = requests.get(search_url)
     # Use BeautifulSoup to parse the HTML response
     soup = BeautifulSoup(response.text, 'html.parser')
-    
     # Initialize an empty list to store the results
     results = []
     # Find all the `a` elements (links) in the HTML response
