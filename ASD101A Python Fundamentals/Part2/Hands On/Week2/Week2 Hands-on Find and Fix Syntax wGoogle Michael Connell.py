@@ -1,4 +1,4 @@
-# Week2 Hands-on Find and Fix with Google Michael Connell
+# Week2 Hands-on Find and Fix with Google & StackOverflow Michael Connell
 import requests
 from bs4 import BeautifulSoup
 # Define a function that takes a syntax error message as input
