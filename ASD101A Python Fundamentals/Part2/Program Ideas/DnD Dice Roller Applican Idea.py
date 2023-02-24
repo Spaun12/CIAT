@@ -25,7 +25,8 @@ while True:
         for dice_type, roll in rolls.items():
             print(f"{dice_type} x 1: {roll}")
     else:
-        # If the user selects "n", prompt for the number and type of dice, and generate rolls for each die individually using a for loop
+        # If the user selects "n", prompt for the number and type of dice, 
+        # and generate rolls for each die individually using a for loop
         dice = int(input("How many dice? "))
         if dice <= 0:
             print("You must roll at least one die.")
