@@ -3,6 +3,10 @@
 import requests
 import json
 import time
+import os
+
+# Check if the script is running in a scheduled task
+is_scheduled_task = "SystemPropertiesScheduledTasks" in os.environ.get("COMPUTERNAME", "")
 
 # Define a function to get a random quote and ask the user if they want another one
 def get_quote():
@@ -22,17 +26,18 @@ def get_quote():
     # Print the quote and author
     print(f"{quote}\n- {author}")
 
-    # Ask the user if they want another quote
-    while True:
-        answer = input("Would you like another quote? (Y/N): ").lower()
-        if answer == "y":
-            print("\n")
-            time.sleep(1)
-            get_quote()
-        elif answer == "n":
-            break
-        else:
-            print("Invalid input. Please enter Y or N.")
+    # Ask the user if they want another quote, unless the script is running in a scheduled task
+    if not is_scheduled_task:
+        while True:
+            answer = input("Would you like another quote? (Y/N): ").lower()
+            if answer == "y":
+                print("\n")
+                time.sleep(1)
+                get_quote()
+            elif answer == "n":
+                break
+            else:
+                print("Invalid input. Please enter Y or N.")
 
 # Call the function to start the program
 get_quote()
