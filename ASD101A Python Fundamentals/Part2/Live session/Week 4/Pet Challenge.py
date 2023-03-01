@@ -8,7 +8,7 @@ class Pet:
         self.species = species
 
     def make_sound(self):
-        print("Generic animal sound")
+        pass
 
 # Define the 'Trickster' child class
 class Trickster:
@@ -28,7 +28,8 @@ class Cat(Pet, Trickster):
         self.color = color
 
     def make_sound(self):
-        print("Meow!")
+        sound = random.choice(["Meow!", "Purr..."])
+        print(sound)
 
     def _get_tricks(self):
         return [
@@ -53,7 +54,8 @@ class Dog(Pet, Trickster):
         self.breed = breed
 
     def make_sound(self):
-        print("Woof!")
+        sound = random.choice(["Woof!", "Whine..."])
+        print(sound)
 
     def chase_cat(self, cat):
         if isinstance(cat, Cat):
