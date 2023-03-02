@@ -1,5 +1,4 @@
 #Week4 HandsOn Part2 Michael Connell
-
 class PersonalInformation:
     def __init__(self, name, address, age, phone_number):
         # Initialize the class with the given personal information
