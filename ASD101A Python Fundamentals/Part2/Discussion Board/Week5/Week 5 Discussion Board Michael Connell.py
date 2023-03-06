@@ -24,13 +24,13 @@ class Person:
 person = Person("John", 30)
 
 # Accessing object's state using accessor methods
-print(person.get_name())  # Output: John
-print(person.get_age())   # Output: 30
+print(person.get_name())  
+print(person.get_age())   
 
 # Modifying object's state using mutator methods
 person.set_name("Jane")
 person.set_age(35)
 
 # Accessing modified state using accessor methods
-print(person.get_name())  # Output: Jane
-print(person.get_age())   # Output: 35
+print(person.get_name())  
+print(person.get_age())   
