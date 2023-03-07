@@ -2,16 +2,22 @@
 #Bank bones exercise
 class Account:
     def __init__(self, balance=0):
-        self._balance = balance
+        self.__balance = balance
+
+    def _get_balance(self):
+        return self.__balance
+
+    def _set_balance(self, balance):
+        self.__balance = balance
 
     def deposit(self, amount):
-        self._balance += amount
+        self.__balance += amount
 
     def withdraw(self, amount):
-        if amount > self._balance:
+        if amount > self.__balance:
             print("Insufficient balance")
         else:
-            self._balance -= amount
+            self.__balance -= amount
 
     def calculate_interest(self):
         pass
@@ -19,10 +25,10 @@ class Account:
 class SavingsAccount(Account):
     def __init__(self, balance=0):
         super().__init__(balance)
-        self.__interest_rate = 0.02  
-# 2% interest rate for savings account
+        self.__interest_rate = 0.02
+
     def calculate_interest(self):
-        interest = self._balance * self.__interest_rate
+        interest = self._get_balance() * self.__interest_rate
         self.deposit(interest)
 
 class CheckingAccount:
@@ -47,16 +53,16 @@ class CheckingAccount:
 class MoneyMarketAccount(Account):
     def __init__(self, balance=0):
         super().__init__(balance)
-        self.__interest_rate = 0.03  
-# 3% interest rate for money market account
-    def calculate_interest(self):
-        interest = self._balance * self.__interest_rate
-        self.deposit(interest)
+        self.__interest_rate = 0.03
 
+    def calculate_interest(self):
+        interest = self._get_balance() * self.__interest_rate
+        self.deposit(interest)
+        
 # Example usage of the classes
 savings = SavingsAccount(1000)
 savings.calculate_interest()
-print(f"Savings account balance: {savings._balance:.2f}")  
+print(f"Savings account balance: {savings._get_balance():.2f}")  
 # Expected output: Savings account balance: 1020.00 (1000 + 2% interest)
 
 checking = CheckingAccount(500)
@@ -67,5 +73,5 @@ print(f"Checking account balance: {checking.get_balance():.2f}")
 
 money_market = MoneyMarketAccount(2000)
 money_market.calculate_interest()
-print(f"Money market account balance: {money_market._balance:.2f}")  
+print(f"Money market account balance: {money_market._get_balance():.2f}")  
 # Expected output: Money market account balance: 2060.00 (2000 + 3% interest)

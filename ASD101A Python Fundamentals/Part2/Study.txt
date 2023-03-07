@@ -1,0 +1,38 @@
+1. Object-oriented programming allows us to hide the object's data attributes from code that is outside the object. Answer: True.
+2. Different functions can have local variables with the same names. Answer: True.
+3. A set is an object that holds multiple unique items of data in an unordered manner. Answer: True.
+4. A value-returning function is like a simple function except that when it finishes it returns a value back to the part of the program that called it. Answer: True.
+5. An exception handler is a piece of code that is written using the try/except statement. Answer: True.
+6. Arrays, which are allowed by most other programming languages, have more capabilities than Python list structures. Answer: False.
+7. Which of the following best describes this code snippet?
+def my_func(str):
+    print(str)
+    return
+Answer: The my_func function takes a string as input parameter and prints it on a screen.
+8. Which method can be used to convert a list to a tuple? Answer: tuple.
+9. What will the following code snippet output?
+prime_numbers = [2, 3, 5, 7]
+element = prime_numbers.pop(2)
+print(element)
+Answer: 5.
+10. The primary difference between a tuple and a list is that once a tuple is created, it cannot be changed. Answer: True.
+11. A class can be thought of as a blueprint that can be used to create an object. Answer: True.
+12. The ____ design technique can be used to break down an algorithm into functions. Answer: Top-down.
+13. You would typically use a for loop to iterate over the elements in a set. Answer: True.
+14. A mutator method has no control over the way that a class’s data attributes are modified. Answer: False.
+15. If a file with the specified name already exists when the file is opened and the file is opened in ‘w’ mode, then an alert will appear on the screen. Answer: False.
+16. The ZeroDivisionError exception is raised when the program attempts to perform the calculation x/y if y = 0. Answer: True.
+17. Each element in a dictionary has two parts: a key and a value. Answer: True.
+18. What is the first negative index in a list? Answer: -1.
+19. The pass keyword is used to pass arguments to a function. Answer: False.
+20. The value assigned to a global constant can be changed in the mainline logic. Answer: False.
+21. In Python there is no restriction on the name of a module file. Answer: True.
+22. An object's state contains the values of the object's attributes at a given moment. Answer: True.
+23. Which section in the UML holds the list of the class’s methods? Answer: The third section or compartment (sometimes called the operations section).
+24. UML provides a set of standard diagrams for graphically depicting object-oriented systems. Answer: True.
+25. Python function names follow the same rules as those naming variables. Answer: True.
+26. To assign a value to a global variable in a function, the global variable must be first declared in the function. Answer: True.
+27. If the last line in a file is not terminated with \n, the readline method will return the line without \n. Answer: True.
+28. A list cannot be passed as an argument to a function. Answer: False.
+29. Closing a file disconnects the communication between the file and the program. Answer: True.
+30. The math function ceil(x) returns the smallest integer that is greater than or equal to 'x' Answer True.
