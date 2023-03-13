@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Coding Challenge 1
+
+   Author: Michael Connell
+   Date: March 13, 2023
+   
+   Filename: code2-1.css
+*/
+
+/* Style rule for the h1 element */
+h1 {
+	font-size: 3.5em;
+	line-height: 0em;
+}
+
+/* Style rule for h1 and h2 elements */
+h1, h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+/* Style rule for the blockquote element */
+blockquote {
+	color: hsl(30, 85%, 45%);
+	font-size: 1.5em;
+}
+
+/* Style for the first letter of the blockquote element */
+blockquote p:first-of-type::first-letter {
+	font-size: 1.5em;
+}
+
+/* Style for the footer element */
+footer {
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	background-color: hsl(30, 85%, 45%);
+	padding: 1em 0;
+}
+
+
