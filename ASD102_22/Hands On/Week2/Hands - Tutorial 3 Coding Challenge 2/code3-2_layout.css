@@ -6,50 +6,31 @@
    Coding Challenge 2
 
    Author: Michael Connell
-   Date: 2023-03-21
-
+   Date: 03/21/2023   
+   
    Filename: code3-2_layout.css
 
 */
-
-body {
-    width: 90%;
-    min-width: 640px;
-    max-width: 1024px;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 30px 1fr 1fr 100px;
-    grid-gap: 15px;
-}
-
 header, footer, aside, article, a {
-    padding: 10px;
-    border: 3px dashed gray;
+padding: 10px;
+outline: 3px grey dashed;
 }
 
-a {
-    display: block;
-}
+body{width: 90%;
+min-width: 640px;
+max-width:1024px;
+margin: 30px auto;
+display: grid;
 
-header {
-    grid-column: 1 / -1;
+grid-template-columns:repeat(6 ,1fr);
+grid-template-rows: 50px 30px 1fr 1fr 100px;
+grid-gap: 15px;
 }
+a {display:block }
 
-article#intro {
-    grid-row: 3 / span 2;
-    grid-column: 1 / span 2;
-}
-
-article#main {
-    grid-row: 3 / span 2;
-    grid-column: 3 / span 3;
-}
-
-footer {
-    grid-column: span 2;
-}
-
-footer * {
-    text-align: left;
-}
+header{grid-column: 1/-1;}
+article#intro{grid-row: span 2;
+grid-column: span 2; }
+article#main{grid-row: span 2;
+grid-column: span 3;}
+footer{grid-column: span 2;}
