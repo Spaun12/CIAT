@@ -9,6 +9,48 @@
    Date:   2023-03-21
    
    Filename: code3-2_layout.css
-
 */
+
+/* Set padding and outline for header, footer, aside, article, and a elements */
+header, footer, aside, article, a {
+    padding: 10px;
+    outline: 3px dashed gray;
+}
+
+/* Set properties for the body element */
+body {
+    width: 90%;
+    min-width: 640px;
+    max-width: 1024px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 30px 1fr 1fr 100px;
+    gap: 15px;
+}
+
+/* Display the a element as a block */
+a {
+    display: block;
+}
+
+/* Set size of grid items */
+header {
+    grid-row: 1 / -1;
+}
+
+#intro {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 2;
+}
+
+#main {
+    grid-row: 3 / span 2;
+    grid-column: 3 / span 3;
+}
+
+footer {
+    grid-column: 4 / span 2;
+}
+
 
