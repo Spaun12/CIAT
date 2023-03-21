@@ -1,0 +1,51 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 2
+
+   Author: Michael Connell
+   Date: 2023-03-21
+
+   Filename: code3-2_layout.css
+
+*/
+
+body {
+    width: 90%;
+    min-width: 640px;
+    max-width: 1024px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 30px 1fr 1fr 100px;
+    grid-gap: 15px;
+}
+
+header, footer, aside, article, a {
+    padding: 10px;
+    border: 3px dashed gray;
+}
+
+a {
+    display: block;
+}
+
+header {
+    grid-column: 1 / -1;
+}
+
+article#intro {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 2;
+}
+
+article#main {
+    grid-row: 3 / span 2;
+    grid-column: 3 / span 3;
+}
+
+footer {
+    grid-column: 1 / span 2;
+}
