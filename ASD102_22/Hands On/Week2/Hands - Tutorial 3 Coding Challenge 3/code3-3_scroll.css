@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 3
+
+   Author: Michael Connell
+   Date: 2023-03-22
+
+   Filename: code3-3_scroll.css
+*/
+
+/* Style rule for the section element with the id "container" */
+#container {
+    width: 900px;
+    height: 370px;
+    margin: 10px auto;
+    position: relative;
+    top: 30px;
+    left: 0;
+    outline: 2px solid brown;
+    overflow: auto;
+}
+
+/* Style rule for every div element */
+div {
+    width: 300px;
+    height: 330px;
+    position: absolute;
+}
+
+/* Style rule for every inline image */
+img {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+/* Style rules for each div element with an id */
+#slide1 {
+    left: 0;
+}
+
+#slide2 {
+    left: 300px;
+}
+
+#slide3 {
+    left: 600px;
+}
+
+#slide4 {
+    left: 900px;
+}
+
+#slide5 {
+    left: 1200px;
+}
+
+#slide6 {
+    left: 1500px;
+}
+
+#slide7 {
+    left: 1800px;
+}
+
+#slide8 {
+    left: 2100px;
+}
+
+#slide9 {
+    left: 2400px;
+}
+
+

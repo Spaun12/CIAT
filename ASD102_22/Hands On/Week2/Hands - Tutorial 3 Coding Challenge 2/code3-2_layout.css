@@ -47,5 +47,9 @@ article#main {
 }
 
 footer {
-    grid-column: 1 / span 2;
+    grid-column: span 2;
+}
+
+footer * {
+    text-align: left;
 }
