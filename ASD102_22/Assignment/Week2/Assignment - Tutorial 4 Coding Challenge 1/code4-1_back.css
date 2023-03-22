@@ -14,7 +14,7 @@
 figure {
     padding: 20px;
     border: 20px ridge rgb(52, 52, 180);
-    background: url(ws.png) no-repeat 100% 100%/45%, rgba(52, 52, 180, 0.3);
+    background: url(ws.png) no-repeat bottom right/45%, rgba(52, 52, 180, 0.3);
     box-shadow: 5px 10px 15px black;
 }
 
