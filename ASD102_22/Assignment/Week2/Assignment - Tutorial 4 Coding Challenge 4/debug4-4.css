@@ -6,7 +6,7 @@
    Coding Challenge 4
 
    Author: Michael Connell
-   Date:   2023-03-23
+   Date:   2023-03-25
    
    Filename: debug4-4.css
 */
@@ -21,7 +21,7 @@ article {
 }
 
 article {
-    border: 20px solid-transparent;
+ /* border: 20px solid transparent; */
 	border-image: linear-gradient(to bottom right, yellow, brown) 35%;
 }
 
