@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Coding Challenge 3
+   
+   Filename: code5-3_layout.css
+
+*/
+
+body {
+   width: 900px;
+}
+
+nav {
+   font-size: 1.2rem;
+   text-align: center;
+   background-color: #f2f2f2;
+   padding: 0;
+   margin: 0;
+}
+
+nav li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+nav li:last-child {
+   margin-right: 0;
+}
+
+nav a {
+   color: blue;
+   text-decoration: none;
+   border-bottom: 1px solid blue;
+}
+
+nav a:hover {
+   color: white;
+   background-color: blue;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+nav > ol > li {
+   line-height: 0.3in;
+}
