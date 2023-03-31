@@ -6,8 +6,52 @@
    Coding Challenge 1
 
    Author: Michael D. Connell Jr.
-   Date: 2023-03-30  
+   Date: 2023-03-30
    Filename: code5-1_media.css
-
 */
+
+/* Media query for devices with a maximum width of 500 pixels */
+@media screen and (max-width: 500px) {
+    article img {
+        display: none; /* Hide the image in the article element */
+    }
+
+    .submenu ul {
+        text-align: center; /* Center the text within the submenu ul element */
+    }
+}
+
+/* Media query for devices with a minimum width of 501 pixels and maximum width of 710 pixels */
+@media screen and (min-width: 501px) and (max-width: 710px) {
+    nav {
+        float: left; /* Float the nav element on the left page margin */
+        width: 130px;
+        height: 400px;
+        margin-top: 30px;
+        margin-right: 25px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+}
+
+/* Media query for devices with a minimum width of 710 pixels */
+@media screen and (min-width: 710px) {
+    nav {
+        float: none; /* Remove the float property */
+        width: 100%;
+        height: auto;
+        margin: 0; /* Reset the margins */
+    }
+
+    ul.mainmenu {
+        display: flex; /* Set the mainmenu ul element to flex */
+        flex-flow: row nowrap; /* Flex flow in the row direction with no wrapping */
+        justify-content: center; /* Justify the contents of the flexbox in the center */
+    }
+
+    ul.mainmenu li {
+        flex: 0 1 120px; /* Set the flex property for the li elements with the ul.mainmenu element (growth factor: 0, shrink factor: 1, basis value: 120px) */
+    }
+}
+
 
