@@ -5,10 +5,9 @@
    Tutorial 5
    Coding Challenge 4
    
-   Author: 
-   Date:   
+   Author: Michael D. Connell Jr.
+   Date: 2023-03-30
    Filename: code5-4_debug.css
-
 */
 
 header {
@@ -16,48 +15,48 @@ header {
 }
 
 body {
-   display: flexbox;
-   flex-float: column nowrap;
+   display: flex; /* corrected property value */
+   flex-flow: column nowrap; /* corrected property name and added missing semicolon */
 }
 
-@media max-width: 500px {
-   
+@media (max-width: 500px) { /* corrected syntax */
+
    nav {
-      flex-order: 3;
+      order: 3; /* corrected property name */
    }
-   
+
    article img {
       display: none;
    }
 }
 
-@media min-width: 501px and max-width: 800px {
+@media (min-width: 501px) and (max-width: 800px) { /* corrected syntax */
    body {
-      flex-float: row wrap;
+      flex-flow: row wrap; /* corrected property name */
    }
-   
+
    header {
       flex: 0 0 100%;
    }
-   
+
    nav {
       flex: 1 3 50px;
    }
-   
+
    article {
       flex: 3 1 150px;
       padding-left: 30px;
    }
-   
+
    article img {
       display: block;
    }
 }
 
-@media min-width: 801px {
-   
+@media (min-width: 801px) { /* corrected syntax */
+
    nav ul {
-      display: flexbox;
+      display: flex; /* corrected property value */
       justify-content: center;
    }
 
