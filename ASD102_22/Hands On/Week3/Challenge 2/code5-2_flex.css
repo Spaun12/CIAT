@@ -5,11 +5,28 @@
    Tutorial 5
    Coding Challenge 2
 
-   Author:   
-   Date:      
+   Author: Michael D. Connell Jr.
+   Date: 2023-03-30
    Filename: code5-2_txt_flex.css
 
 */
+
+/* Display the section element as a flexbox */
+section {
+    display: flex;
+    flex-flow: row wrap-reverse; /* Set the flow of items in row order with reverse wrapping */
+    justify-content: space-around; /* Distribute space evenly between the items */
+}
+
+/* Set the growth, shrink rate, and flex basis of the div elements of the card class */
+.card {
+    flex: 1 1 200px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 200px */
+    display: flex; /* Display each div element of the card class itself as a flexbox */
+    flex-flow: column nowrap; /* Lay out the items in column order with no wrapping */
+    justify-content: space-between; /* Justify the content of the items within the flexbox with space between */
+    align-items: center; /* Center each of the items with respect to the cross axis */
+}
+
 
 
 
