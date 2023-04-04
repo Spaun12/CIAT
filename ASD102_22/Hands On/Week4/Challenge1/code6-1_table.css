@@ -5,9 +5,44 @@
    Tutorial 6
    Coding Challenge 1
    
-   Author:   Coding Challenge 1   
-   Date:     2021-03-01
+   Author: Michael D. Connell Jr
+   Date: 2023-04-04
    Filename: code6-1_table.css
-
 */
 
+/* For the table element */
+table {
+    border: 20px grooved gray;
+    border-collapse: collapse;
+}
+
+/* For the th and td elements */
+th, td {
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+
+/* For the caption element */
+caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/* For col element with the id firstCol */
+#firstCol {
+    background-color: yellow;
+    width: 150px;
+}
+
+/* For col element with the id hourCols */
+#hourCols {
+    width: 75px;
+}
+
+/* Change the background color of the thead element */
+thead {
+    background-color: aqua;
+}
