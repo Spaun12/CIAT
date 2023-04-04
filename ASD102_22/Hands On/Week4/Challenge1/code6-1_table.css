@@ -24,6 +24,12 @@ th, td {
     text-align: left;
 }
 
+/* For the first column th and td elements */
+.firstCol {
+    background-color: yellow;
+    width: 150px;
+}
+
 /* For the caption element */
 caption {
     caption-side: top;
@@ -31,18 +37,4 @@ caption {
     font-size: 1.5em;
 }
 
-/* For col element with the id firstCol */
-#firstCol {
-    background-color: yellow;
-    width: 150px;
-}
-
-/* For col element with the id hourCols */
-#hourCols {
-    width: 75px;
-}
-
-/* Change the background color of the thead element */
-thead {
-    background-color: aqua;
-}
+/* Change the background color of the thead element
