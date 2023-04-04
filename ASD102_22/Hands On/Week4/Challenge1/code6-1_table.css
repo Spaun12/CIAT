@@ -8,15 +8,14 @@
    Author: Michael D. Connell Jr
    Date: 2023-04-04
    Filename: code6-1_table.css
+
 */
 
-/* For the table element */
 table {
-    border: 20px grooved gray;
+    border: 20px groove gray;
     border-collapse: collapse;
 }
 
-/* For the th and td elements */
 th, td {
     border: 1px solid gray;
     padding: 5px;
@@ -24,17 +23,21 @@ th, td {
     text-align: left;
 }
 
-/* For the first column th and td elements */
-.firstCol {
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#firstCol {
     background-color: yellow;
     width: 150px;
 }
 
-/* For the caption element */
-caption {
-    caption-side: top;
-    text-align: left;
-    font-size: 1.5em;
+#hourCols {
+    width: 75px;
 }
 
-/* Change the background color of the thead element
+thead {
+    background-color: aqua;
+}
