@@ -29,12 +29,12 @@ caption {
     text-align: left;
 }
 
-#firstCol {
+table col#firstCol {
     background-color: yellow;
     width: 150px;
 }
 
-#hourCols {
+table col#hourCols {
     width: 75px;
 }
 
