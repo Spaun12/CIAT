@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Coding Challenge 1
+   
+   Author:  Michael D. Connell Jr.
+   Date: 2023-04-09   
+   Filename: code7-1.html
+   -->
+   <meta charset="utf-8">
+   <title>Coding Challenge 7-1</title>
+   <link rel="stylesheet" href="code7-1_forms.css">
+   <script src="formsubmit.js"></script>
+</head>
+<body>
+   <h1>Enter User Account</h1>
+
+   <form action="login-script.php" method="post">
+      <fieldset id="login">
+         <legend>Enter Account Information</legend>
+         
+         <label for="acctype">Account Type:</label>
+         <select id="acctype" name="accounttype" size="3">
+            <option value="type1">administrator</option>
+            <option value="type2">member</option>
+            <option value="type3">guest</option>
+         </select>
+
+         <br>
+
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="user">
+
+         <br>
+
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="pwd">
+
+         <br>
+
+         <button type="submit">Login</button>
+         
+      </fieldset>
+   </form>
+</body>
+</html>
