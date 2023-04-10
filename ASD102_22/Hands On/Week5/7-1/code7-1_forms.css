@@ -53,3 +53,12 @@ input[type="submit"] {
    margin: 10px 0px 0px 130px;
    font-size: 1em;
 }
+
+.form-container {
+   display: inline-block;
+}
+
+.button-container {
+   text-align: center;
+   margin-top: 1em;
+}
