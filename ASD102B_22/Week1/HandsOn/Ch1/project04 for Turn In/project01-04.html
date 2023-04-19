@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 1
+      Hands-on Project 1-4
+
+      Author: Michael D. Connell Jr.
+      Date: 2023-04-18
+
+      Filename: project01-04.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 1-4</title>
+   <link rel="stylesheet" href="styles.css" />
+
+   <!-- Step 4: Add a script element to include project01-04.js -->
+   <script src="project01-04.js"></script>
+</head>
+
+<body onload="displayAddresses();">
+   <header>
+      <h1>
+         Hands-on Project 1-4
+      </h1>
+   </header>
+
+   <article>
+      <h2>Shipping Address</h2>
+      <form>
+      
+         <fieldset id="addroptions">
+            <legend><span>Choose an address</span></legend>
+            <label for="homeoption" id="homeaddr">
+               <div>Home</div>
+               <div id="homeAddressDetails"></div>
+               <!-- Step 7: Add onclick event handler to homeoption input -->
+               <input type="radio" id="homeoption" name="shippingaddr" onclick="setHomeAddress();" />
+            </label>
+            <label for="workoption" id="workaddr">
+               <div>Work</div>
+               <div id="workAddressDetails"></div>
+               <!-- Step 8: Add onclick event handler to workoption input -->
+               <input type="radio" id="workoption" name="shippingaddr" onclick="setWorkAddress();" />
+            </label>
+         </fieldset>
+         
+         <fieldset id="contactinfo">
+            <label for="street">
+              Street Address
+              <input type="text" id="street" />
+            </label>
+            <label for="city">
+              City
+              <input type="text" id="city" />
+            </label>
+            <label for="state">
+              State
+              <input type="text" id="state" />
+            </label>
+            <label for="code">
+              Zip
+              <input type="text" id="code" />
+            </label>
+          </fieldset>
+          
+     </form>
+   </article>
+</body>
+</html>
