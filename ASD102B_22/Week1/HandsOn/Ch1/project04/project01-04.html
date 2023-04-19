@@ -6,8 +6,8 @@
       Chapter 1
       Hands-on Project 1-4
 
-      Author: 
-      Date:   
+      Author: Michael D. Connell Jr.
+      Date: 2023-04-18  
 
       Filename: index.htm
    -->
@@ -15,6 +15,7 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-4</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="project01-04.js"></script> <!-- Added script tag to include the external JavaScript file -->
 </head>
 
 <body>
@@ -32,11 +33,13 @@
             <legend><span>Choose an address</span></legend>
             <label for="homeoption" id="homeaddr">
                <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+               <!-- Added onclick event handler for home address option -->
+               <input type="radio" id="homeoption" name="shippingaddr" onclick="document.getElementById('street').value = homeStreet; document.getElementById('city').value = homeCity; document.getElementById('state').value = homeState; document.getElementById('code').value = homeCode;" />
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <!-- Added onclick event handler for work address option -->
+               <input type="radio" id="workoption" name="shippingaddr" onclick="document.getElementById('street').value = workStreet; document.getElementById('city').value = workCity; document.getElementById('state').value = workState; document.getElementById('code').value = workCode;" />
             </label>
          </fieldset>
          
