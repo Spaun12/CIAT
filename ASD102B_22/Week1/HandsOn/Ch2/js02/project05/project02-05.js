@@ -3,8 +3,8 @@
       Project 02-05
 
       Application to create an online calculator
-      Author: 
-      Date:   
+      Author: Michael D. Connell Jr.
+      Date: 2023-04-18
 
       Filename: project02-05.js
  */
