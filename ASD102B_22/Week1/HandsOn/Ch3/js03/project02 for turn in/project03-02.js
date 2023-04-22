@@ -25,4 +25,16 @@ captions[11]="The International Space Station second expansion [2006]";
 captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
 
+// Step 3: Declare the htmlCode variable, setting its initial value to an empty text string
+let htmlCode = "";
 
+// Step 4: Create a for loop to populate the htmlCode variable
+for (let i = 0; i < captions.length; i++) {
+   htmlCode += `<figure>
+   <img alt='' src='slide${i}.jpg' />
+   <figcaption>${captions[i]}</figcaption>
+</figure>`;
+}
+
+// Step 5: Change the inner HTML of the document element by the id "gallery" to the value of the htmlCode variable
+document.getElementById("gallery").innerHTML = htmlCode;
