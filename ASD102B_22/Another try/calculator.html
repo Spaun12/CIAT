@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body class="bg-image">
+    <header>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Portfolio</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Calculator</h1>
+        <div id="calculator">
+            <input type="number" id="number1" placeholder="Number 1">
+            <input type="number" id="number2" placeholder="Number 2">
+            <button id="add" onclick="calculate('add')">+</button>
+            <button id="subtract" onclick="calculate('subtract')">-</button>
+            <button id="multiply" onclick="calculate('multiply')">*</button>
+            <button id="divide" onclick="calculate('divide')">/</button>
+            <div id="result"></div>
+        </div>
+        <div id="warning" style="display: none;">
+            <h2>Website disabled</h2>
+        </div>
+        <div id="jk" style="display: none;">
+            <h2>Just kidding!</h2>
+        </div>
+    </main>
+</body>
+</html>

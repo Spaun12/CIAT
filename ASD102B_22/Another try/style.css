@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.bg-image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.contact-bg {
+    background-color: lightblue;
+    min-height: 100vh;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.portfolio-description {
+    color: white;
+}
+
+#calculator input {
+    display: block;
+    margin-bottom: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    color: black;
+}
+
+#calculator button {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+#calculator button:hover {
+    background-color: #e6e6e6;
+}
+
+#result {
+    color: white;
+    margin-top: 1rem;
+}
+
+#warning h2,
+#jk h2 {
+    color: red;
+}
+h1  {
+    color: white;
+}
+p {
+    color: white;
+}
+h2 {
+    color: white;
+}
+.portfolio-video {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1rem;
+}
