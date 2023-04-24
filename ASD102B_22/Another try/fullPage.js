@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
-        scrollingSpeed: 1000, // Adjust this value to control the scrolling speed (milliseconds)
-        touchSensitivity: 25, // Adjust this value to control the touch sensitivity (higher values require more swipe)
+        scrollingSpeed: 1000, // in ms
+        touchSensitivity: 25, // in px
     });
 
     const menuItems = document.querySelectorAll('nav ul li a');
