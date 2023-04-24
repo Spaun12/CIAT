@@ -12,7 +12,12 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    position: fixed; /* Added */
+    width: 100%; /* Added */
+    background-color: rgba(0, 0, 0, 0.5); /* Added */
+    z-index: 999; /* Added */
 }
+
 
 .logo {
     width: 50px;
@@ -26,7 +31,9 @@ nav ul {
 
 nav ul li {
     margin-left: 1rem;
+    background-color: rgba(192, 192, 192, 0.5);
 }
+
 
 nav ul li a {
     text-decoration: none;
@@ -46,15 +53,10 @@ p {
     color: white;
 }
 
-.bg-image {
+.section-bg {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-}
-
-.contact-bg {
-    background-color: lightblue;
     min-height: 100vh;
 }
 
@@ -75,7 +77,7 @@ p {
     color: white;
 }
 
-#calculator input {
+#calculator-wrapper input {
     display: block;
     margin-bottom: 1rem;
     background-color: white;
@@ -84,7 +86,7 @@ p {
     color: black;
 }
 
-#calculator button {
+#calculator-wrapper button {
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     color: black;
@@ -93,19 +95,26 @@ p {
     cursor: pointer;
 }
 
-#calculator button:hover {
+#calculator-wrapper button:hover {
     background-color: #e6e6e6;
 }
 
-#result {
+#calculator-wrapper #result {
     color: white;
     margin-top: 1rem;
+}
+
+#warning,
+#jk {
+    display: none;
+    color: red;
 }
 
 #warning h2,
 #jk h2 {
     color: red;
 }
+
 h1  {
     color: white;
 }
@@ -119,4 +128,21 @@ h2 {
     max-width: 100%;
     height: auto;
     margin-right: 1rem;
+}
+.page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.section-content {
+    padding-top: 70px; /* Adjust this value as needed */
+}
+
+.section-spacing {
+    margin-top: 0px; /* Adjust this value to increase or decrease the space between sections */
 }

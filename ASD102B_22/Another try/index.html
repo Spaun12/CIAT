@@ -4,23 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>My Website</title>
 </head>
 <body class="bg-image">
+    <!-- Make the header fixed so it scrolls with the user -->
     <header>
         <img src="logo.jpg" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="calculator.html">Calculator</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>As I set off on this thrilling adventure, I can't help but be curious about the huge academic terrain that awaits me. As an avid student, I intend to make the most of whatever educational chance or difficulty that presents itself. I have an insatiable appetite for knowledge and am excited to learn about the unknowns that lie ahead. As I go out on this journey, I know that my commitment to and enthusiasm for studying will help me reach new heights. With each new experience, my horizons broaden, and I anticipate the fantastic discoveries that lie ahead with great anticipation. So come along with me on this adventure as I learn, develop, and reach the limits of my own potential. The Old Vet's Class Oath, as it were.</p>
-    </main>
+    <div id="fullpage">
+        <!-- Home Section -->
+        <div class="section page-section section-bg" id="home" data-anchor="home" data-menuanchor="home">
+            <div class="section-content">
+                <h1>Welcome to My Website</h1>
+                <p>Embarking on this exciting journey, I find myself eager to explore the vast landscape of knowledge that lies ahead. As a passionate learner, I'm committed to embracing every opportunity and challenge that comes my way. My curiosity knows no bounds, and I'm eager to uncover the secrets and mysteries that the future holds. As I navigate through this adventure, I'm confident that my dedication and love for learning will propel me towards new heights. With each step, my horizons expand, and I'm thrilled to see what incredible discoveries await me. So join me on this voyage, as I continue to grow, evolve, and unlock the infinite potential within. The oath of the old Vet in Class.</p>
+            </div>
+        </div>
+        <!-- Portfolio Section -->
+        <div class="section page-section section-bg" id="portfolio" data-anchor="portfolio" data-menuanchor="portfolio">
+            <div class="section-content">
+                <h1>Portfolio</h1>
+                <h2>As all is assimilated, more will be shown on this page.</h2>
+                <div class="portfolio-item">
+                    <video src="To The Journey.mp4" controls class="portfolio-video" autoplay loop muted></video>
+                    <p class="portfolio-description">To the Journey</p>
+                </div>
+            </div>
+        </div>
+<!-- Calculator Section -->
+<div class="section page-section section-bg" id="calculator" data-anchor="calculator" data-menuanchor="calculator">
+    <div class="section-content">
+        <h1>Calculator</h1>
+        <div id="calculator-wrapper">
+            <input type="number" id="number1" placeholder="Number 1">
+            <input type="number" id="number2" placeholder="Number 2">
+            <button id="add" onclick="calculate('add')">+</button>
+            <button id="subtract" onclick="calculate('subtract')">-</button>
+            <button id="multiply" onclick="calculate('multiply')">*</button>
+            <button id="divide" onclick="calculate('divide')">/</button>
+            <button id="percentage" onclick="calculate('percentage')">%</button>
+            <div id="result"></div>
+        </div>
+        <div id="warning" style="display: none;">
+            <h2>Website disabled</h2>
+        </div>
+        <div id="jk" style="display: none;">
+            <h2>Just kidding!</h2>
+        </div>
+    </div>
+</div>
+              <!-- Contact Section -->
+            <div class="section page-section section-bg" id="contact" data-anchor="contact" data-menuanchor="contact">
+            <div class="section-content">
+            <h1>Contact Me</h1>
+                <form action="https://formspree.io/f/{your_formspree_id_here}" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="fullPage.js"></script>
 </body>
 </html>
