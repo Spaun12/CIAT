@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div id="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <form id="contactForm" onsubmit="return validateContactForm();">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>
