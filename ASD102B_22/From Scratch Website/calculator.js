@@ -1,43 +1,61 @@
-let usageCount = 0;
-//this has both the calculator and the if else task part of number 3
-function calculate(operation) {
-  if (usageCount >= 3) {
-    // Show warning, hide calculator, and reset usageCount after 2 seconds
-    document.getElementById("warning").style.display = "block";
-    document.getElementById("calculator").style.display = "none";
-    setTimeout(() => {
-      document.getElementById("warning").style.display = "none";
-      document.getElementById("jk").style.display = "block";
-      setTimeout(() => {
-        document.getElementById("jk").style.display = "none";
-        document.getElementById("calculator").style.display = "block";
-        usageCount = 0;
-      }, 2000);
-    }, 2000);
-    return;
-  }
+// Calculator
+let calculatorUsageCount = 0;
 
-  const number1 = parseFloat(document.getElementById("number1").value);
-  const number2 = parseFloat(document.getElementById("number2").value);
-  let result;
+function calculateResult() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    const operation = document.getElementById("operation").value;
 
-  switch (operation) {
-    case "add":
-      result = number1 + number2;
-      break;
-    case "subtract":
-      result = number1 - number2;
-      break;
-    case "multiply":
-      result = number1 * number2;
-      break;
-    case "divide":
-      result = number1 / number2;
-      break;
-    default:
-      result = "Invalid operation";
-  }
+    let result;
 
-  document.getElementById("result").innerHTML = result;
-  usageCount++;
+    switch (operation) {
+        case "add":
+            result = num1 + num2;
+            break;
+        case "subtract":
+            result = num1 - num2;
+            break;
+        case "multiply":
+            result = num1 * num2;
+            break;
+        case "divide":
+            result = num1 / num2;
+            break;
+    }
+
+    document.getElementById("result").innerText = `Result: ${result}`;
+}
+
+function handleCalculatorUsage() {
+    const calculatorContainer = document.getElementById("calculator");
+    calculatorUsageCount++;
+
+    if (calculatorUsageCount > 3) {
+        calculatorContainer.innerHTML = "Warning! Website disabled.";
+        setTimeout(() => {
+            calculatorUsageCount = 0;
+            calculatorContainer.innerHTML = `
+                <div>
+                    <label for="num1">Number 1:</label>
+                    <input type="number" id="num1">
+                </div>
+                <div>
+                    <label for="num2">Number 2:</label>
+                    <input type="number" id="num2">
+                </div>
+                <div>
+                    <label for="operation">Operation:</label>
+                    <select id="operation">
+                        <option value="add">Add</option>
+                        <option value="subtract">Subtract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divide</option>
+                    </select>
+                </div>
+                <div>
+                    <button onclick="calculateResult(); handleCalculatorUsage();">Calculate</button>
+                </div>
+                <div id="result">Result:</div>`;
+        }, 10 * 1000);
+    }
 }
