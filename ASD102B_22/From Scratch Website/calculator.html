@@ -1,22 +1,27 @@
+<!-- Michael Connell Basic Website 2023-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <header>
-        <div id="logo">Your Logo</div>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" id="logo-image">
+            Early Website Design
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Welcome</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="journal.html">Journal</a></li>
                 <li><a href="calculator.html">Calculator</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
             </ul>
         </nav>
     </header>
@@ -32,13 +37,22 @@
                 <input type="number" id="num2">
             </div>
             <div>
-                <button onclick="calculateSum(); handleCalculatorUsage();">Add Numbers</button>
+                <label for="operation">Operation:</label>
+                <select id="operation">
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="divide">Divide</option>
+                </select>
+            </div>
+            <div>
+                <button onclick="calculateResult(); handleCalculatorUsage();">Calculate</button>
             </div>
             <div id="result">Result:</div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023 Michael Connell</p>
     </footer>
 </body>
 </html>

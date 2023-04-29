@@ -1,0 +1,132 @@
+/* General styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    color:white; /* White text */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #1c1c1c, #3c3c3c);
+    animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 10px; /* Adjust this value to your preference */
+    background-color: rgba(192, 192, 192, 0.5); /* See-through silver */
+    color:  white; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    background-color: rgba(192, 192, 192, 0.8); /* Slightly darker on hover */
+    color: #ffffff; /* White text */
+}
+
+
+main {
+    margin: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* used to make the site more responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Logo resizing */
+#logo-image {
+    max-height: 50px;
+    width: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust the space between the logo and text */
+}
+
+/* New styles for form items */
+.form-item {
+    margin-bottom: 1rem; /* Add some space between form items */
+}
+
+#entry {
+    width: 100%; /* Make the textarea fill the available width */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+
+/* New styles for the journal page */
+.journal-entry {
+    margin-bottom: 1rem; /* Add some space between journal entries */
+}
+.important-entry {
+    background-color: rgba(255, 215, 0, 0.5); /* Gold background with 50% opacity */
+    font-weight: bold;
+}
+/* table format for the journal page */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #ffffff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table th {
+    background-color: rgba(192, 192, 192, 0.5);
+    color: #ffffff;
+}
+
+/* contact format */
+#contact-message {
+    color: #4CAF50; /* Green text */
+    font-weight: bold;
+    margin-top: 1rem; /* Add some space between the message and the form */
+}
+
