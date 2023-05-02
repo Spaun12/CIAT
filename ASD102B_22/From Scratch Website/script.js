@@ -63,7 +63,6 @@ function displayJournalEntries() {
     const tableBody = document.getElementById("table-body");
     let journalEntriesHtml = "";
 
-    // Replace the existing forEach loop with the provided code
     journalEntries.forEach((entry) => {
         const importantClass = entry.important ? "important-entry" : "";
         journalEntriesHtml += `
@@ -124,3 +123,5 @@ function displayContactMessage() {
     document.getElementById("message").value = "";
 }
 
+
+  
