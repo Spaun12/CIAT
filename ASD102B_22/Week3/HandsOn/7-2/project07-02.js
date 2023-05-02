@@ -4,8 +4,8 @@
       Project 07-02
 
       Project to deal cards from a shuffled poker deck
-      Author: 
-      Date:   
+      Author: Michael D. Connell Jr.
+      Date: 2023-05-02
 
       Filename: project07-02.js
 */
@@ -27,9 +27,29 @@ let cards = document.querySelectorAll("div#hand span");
 let cardsLeft = document.getElementById("cardsLeft");
 let deck = [];
 
+newDeck(); // Call newDeck() initially to generate the deck of cards
+
 document.getElementById("deal").onclick = function() {   
-   
+   // Step 5: Iterate through the contents of the cards node list
+   for (let i = 0; i < cards.length; i++) {
+      if (deck.length === 0) {
+         newDeck();
+      }
+      cards[i].textContent = deck.pop();
+      cardsLeft.textContent = deck.length;
+   }
+};
 
+// Step 4: Create the newDeck() function
+function newDeck() {
+   // a. Split the contents of the deckStr variable
+   deck = deckStr.split(", ");
+
+   // b. Sort the contents of the deck array using the shuffle() function
+   deck.sort(shuffle);
+
+   // c. Create the shuffle() function
+   function shuffle(a, b) {
+      return 0.5 - Math.random();
+   }
 }
-
-            
