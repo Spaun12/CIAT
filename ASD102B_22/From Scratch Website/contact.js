@@ -1,7 +1,22 @@
+import FeedbackManager from "./FeedbackManager.js";
+
 // contact form
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
     displayContactMessage();
+});
+
+const feedbackManager = new FeedbackManager();
+
+// Handle checkbox changes for feedback form
+document.querySelectorAll('input[type=checkbox]').forEach((checkbox) => {
+    checkbox.addEventListener('change', (event) => {
+        if (event.target.checked) {
+            feedbackManager.addOption(event.target.value);
+        } else {
+            feedbackManager.removeOption(event.target.value);
+        }
+    });
 });
 
 function displayContactMessage() {
@@ -11,6 +26,12 @@ function displayContactMessage() {
     // Validate email and message fields
     if (!email || !message) {
         alert("Please fill in all fields!");
+        return;
+    }
+
+    // Validate if at least one reason is selected
+    if (feedbackManager.isEmpty()) {
+        alert("Please select at least one reason for contacting us!");
         return;
     }
 
@@ -32,4 +53,9 @@ function displayContactMessage() {
     // Clear the form fields
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
+
+    // Remove the "successfully sent" message after a timeout (5 seconds)
+    setTimeout(() => {
+        messageElement.remove();
+    }, 5000); // (5 seconds)
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="contact.js" defer></script>
+    <script src="contact.js" type="module" defer></script>
     <title>Contact</title>
 </head>
 <body>
@@ -29,6 +29,21 @@
         <h1>Contact Me</h1>
         <p>If you have any questions or suggestions, feel free to reach out to me using the contact form below:</p>
         <form id="contactForm" class="contact-form">
+            <!-- feedback form -->
+            <div id="options">
+                <p>Select your reasons for contacting us:</p>
+                <input type="checkbox" id="option1" name="option1" value="Feedback">
+                <label for="option1">Feedback</label><br>
+                <input type="checkbox" id="option2" name="option2" value="Question">
+                <label for="option2">Question</label><br>
+                <input type="checkbox" id="option3" name="option3" value="Support">
+                <label for="option3">Support</label><br>
+                <input type="checkbox" id="option4" name="option4" value="Suggestion">
+                <label for="option4">Suggestion</label><br>
+                <input type="checkbox" id="option5" name="option5" value="Complaint">
+                <label for="option5">Complaint</label><br>
+            </div>
+            <!-- End of feedback form -->
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" required>
