@@ -4,12 +4,11 @@
       Project 08-05
 
       Interface to replay a chess game stored in a JSON file
-      Author: 
-      Date:   
+      Author: Michael D. Connell Jr. 
+      Date: 2023-05-03  
 
       Filename: project08-05.js
 */
-
 
 /*--------------------- Interface Code -------------------*/
 
@@ -24,7 +23,8 @@ let whiteBox = document.getElementById("whiteBox");       // box containing capt
 let titleBox = document.getElementById("title");          // h1 heading for game title
 let descBox = document.getElementById("description");     // paragraph for game description
 
-getLogButton.onchange = function() {
+// Updates: Changed onchange event to an event listener
+getLogButton.addEventListener("change", function() {
    // Retrieve information about the selected file
    let JSONfile = this.files[0];
    
@@ -36,7 +36,7 @@ getLogButton.onchange = function() {
    // and store the contents in the game object literal
    fr.onload=function(){ 
       // Load data from the JSON file into the game object
-      let game = json.parse(fr.result);
+      let game = JSON.parse(fr.result);
       
       titleBox.textContent = game.title;
       descBox.textContent = game.description;
@@ -44,23 +44,25 @@ getLogButton.onchange = function() {
       writeMoveLog(game.moves);
       
       // Create a new chess set object
-      let mySet = chessSet(game);
+      let mySet = new chessSet(game);
+
       
       setupBoard(mySet);
       
-      nextButton.onclick = function() {
+      // Updates: Changed onclick events to event listeners
+      nextButton.addEventListener("click", function() {
          if (game.move < game.moves.length - 1) {
             showNextBoard(game);           
          }
-      }
-      prevButton.onclick = function() {
+      });
+      
+      prevButton.addEventListener("click", function() {
          if (game.move > -1) {
             showPrevBoard(game);           
          }
-      }      
+      });      
    }
-   
-};
+});
 
 function writeMoveLog(moves) {
    for (let i = 0; i < moves.length; i+=2) {
