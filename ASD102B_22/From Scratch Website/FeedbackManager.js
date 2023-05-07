@@ -1,3 +1,6 @@
+// Michael D. Connell Jr. Beginner Website creation project 2023 CIAT WebDevelopment
+// Need to do a bit more research on this one. Want to know best practices for this type of code.
+
 export default class FeedbackManager {
     constructor() {
         this.selectedOptions = [];

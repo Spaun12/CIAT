@@ -1,4 +1,6 @@
-// Journal
+// Michael D. Connell Jr. Beginner Website creation project 2023 CIAT WebDevelopment
+
+// Journal Creation and Function
 
 // Function to handle form submission and save the journal entry
 function submitJournalEntry() {

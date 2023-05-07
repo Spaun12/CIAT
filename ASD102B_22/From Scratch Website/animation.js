@@ -1,3 +1,5 @@
+// Michael D. Connell Jr. Beginner Website creation project 2023 CIAT WebDevelopment
+
 // text animation
 function animateText() {
     anime({

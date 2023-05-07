@@ -1,3 +1,7 @@
+// Michael D. Connell Jr. Beginner Website creation project 2023 CIAT WebDevelopment
+
+
+// enable FeedbackManager to be imported as a module
 import FeedbackManager from "./FeedbackManager.js";
 
 // contact form
@@ -29,7 +33,7 @@ function displayContactMessage() {
         return;
     }
 
-    // Validate if at least one reason is selected
+    // Validate if at least one reason is selected _ Had to be added to make checks operate correctly
     if (feedbackManager.isEmpty()) {
         alert("Please select at least one reason for contacting us!");
         return;
