@@ -34,6 +34,7 @@ submitButton.onclick = function() {
    sessionStorage.setItem("itemsInCart", itemTotal);
    
    // Create a text string describing the product added to the cart
+   // fixed by adding space quotation marks around " & "
    let itemText = product.value + " & ";
    itemText += price.value + " & ";
    itemText += quantity.value + " & ";
