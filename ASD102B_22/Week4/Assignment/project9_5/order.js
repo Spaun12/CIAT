@@ -4,8 +4,8 @@
       Project 09-05
 
       Project to add orders to shopping cart web storage
-      Author: 
-      Date:   
+      Author: Michael D. Connell Jr.
+      Date: 2023-05-08   
 
       Filename: orders.js
 */
@@ -20,24 +20,27 @@ let color = document.getElementById("color");
 
 submitButton.onclick = function() {
    let itemTotal;
+   
    // Increase the total items in the shopping cart by 1
-   if (sessionStorage.getItem(itemsInCart)) {
-      itemTotal = parseInt(sessionStorage.getItem(itemsInCart)) + 1;
+   // Corrected by adding quotation marks around itemsInCart
+   if (sessionStorage.getItem("itemsInCart")) {
+      itemTotal = parseInt(sessionStorage.getItem("itemsInCart")) + 1;
    } else {
       itemTotal = 1;
    }
    
    // Store the number of items in the shopping cart
-   sessionStorage.setItem(itemsInCart, itemTotal);
+   // Corrected by adding quotation marks around itemsInCart
+   sessionStorage.setItem("itemsInCart", itemTotal);
    
    // Create a text string describing the product added to the cart
-   let itemText = product.value + "&";
-   itemText += price.value + "&";
-   itemText += quantity.value + "&";
-   itemText += size.value + "&";
+   let itemText = product.value + " & ";
+   itemText += price.value + " & ";
+   itemText += quantity.value + " & ";
+   itemText += size.value + " & ";
    itemText += color.value;
 
    // Create a new shopping cart storage item with the key name "cartItem" plus the item number
-   sessionStorage.set("cartItem" + itemTotal, itemText);
-   
+   // Corrected by changing sessionStorage.set to sessionStorage.setItem
+   sessionStorage.setItem("cartItem" + itemTotal, itemText);   
 }

@@ -21,11 +21,11 @@ let region = document.getElementById("region");
 let miles = document.getElementById("miles");
 let comments = document.getElementById("comments");
 
-DocumentFragment.getElementById(submitButton).onclick = showData;
+document.getElementById("submitButton").onclick = showData;
 
 function showData() {
       sessionStorage.setItem("riderName", riderName.value);
-      sessionStorage.setItem("agrGroup", ageGroup.value);
+      sessionStorage.setItem("ageGroup", ageGroup.value);
       sessionStorage.setItem("bikeOption", bikeOption.value);
       sessionStorage.setItem("routeOption", routeOption.value);
       sessionStorage.setItem("accOption", accOption.value);
@@ -33,5 +33,5 @@ function showData() {
       sessionStorage.setItem("miles", miles.value);
       sessionStorage.setItem("comments", comments.value);
 
-      location.href = "project09-02b.html";
+      location.href = "project09-02b.html"
 }

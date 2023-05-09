@@ -4,8 +4,8 @@
       Project 09-05
 
       Project to add orders to shopping cart web storage
-      Author: 
-      Date:   
+      Author: Michael D. Connell Jr.
+      Date: 2023-05-08  
 
       Filename: cart.js
 */
@@ -19,8 +19,9 @@ window.addEventListener("load", displayCart);
 function displayCart() {
    
    // Check that there are items in the shopping cart
-   if (sessionStorage.get(itemsInCart)) {
-      let itemTotal = sessionStorage.get(itemsInCart);
+   // Corrected by changing sessionStorage.get to sessionStorage.getItem and adding quotation marks around itemsInCart
+   if (sessionStorage.getItem("itemsInCart")) {
+      let itemTotal = sessionStorage.getItem("itemsInCart");
       
       // Create the code for the table and the table header
       let cartTable = document.createElement("table");
@@ -32,7 +33,8 @@ function displayCart() {
       for (let i = 1; i <= itemTotal; i++) {
          
          // Retrieve information about a product added to the cart
-         let productArr = session.getItem("cartItem" + i).split(" ; ");
+         // Corrected by changing session.getItem to sessionStorage.getItem and " ; " to " & "
+         let productArr = sessionStorage.getItem("cartItem" + i).split(" & ");
          let newRow = document.createElement("tr");
          
          // Display the name of the product
@@ -42,7 +44,7 @@ function displayCart() {
          
          // Display a description of the product (size and color)
          let descriptionCell = document.createElement("td");
-         descriptionCell.textContent = productArr[3] + ", " + productArr[4];
+         descriptionCell.textContent = "Size: " + productArr[3] + ", Color: " + productArr[4];
          newRow.appendChild(descriptionCell);
          
          // Display the quantity ordered
@@ -61,3 +63,4 @@ function displayCart() {
       cartContainer.appendChild(cartTable);
    }
 }
+
