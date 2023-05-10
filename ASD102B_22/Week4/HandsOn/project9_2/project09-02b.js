@@ -29,4 +29,3 @@ accOption.textContent = sessionStorage.getItem("accOption");
 region.textContent = sessionStorage.getItem("region");
 miles.textContent = sessionStorage.getItem("miles");
 comments.textContent = sessionStorage.getItem("comments");
-
