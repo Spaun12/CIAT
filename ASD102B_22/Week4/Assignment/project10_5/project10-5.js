@@ -14,12 +14,12 @@
 
 
 // Event handler to for keydown events within the current document
-document.onkeydown = selectLetter;
+document.onkeydown = selectLetter; // updated onkeypress to onkeydown
 
 // Function to apply keyboard actions to select a letter or navigate the puzzle
 function selectLetter(e) {
    
-   e.preventDefault();
+   e.preventDefault(); // changed event to e
    
    // Reference the letter to the left of the current letter
    let leftLetter = document.getElementById(currentLetter.dataset.left);
@@ -51,11 +51,11 @@ function selectLetter(e) {
    } else if (userKey === "Backspace" || userKey === "Delete") { // Delete the character
       currentLetter.textContent = ""; 
       
-   } else if (userKey === " ") { // Toggle the typing direction
+   } else if (userKey === " ") { // Toggle the typing direction (changed from "Space" to " ")
       switchTypeDirection();  
       
    } else if (userKey >= "a" && userKey <= "z") { // Write the character
-      currentLetter.textContent = userKey; 
+      currentLetter.textContent = userKey.toUpperCase(); 
       
       if (typeDirection === "right") {
          formatPuzzle(rightLetter);  // Move right after typing the letter
