@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,20 +7,37 @@
     <title>Image Gallery</title>
 </head>
 <body>
-    <header>
-        <!-- Copy the header from your index.html -->
+<header>
+        <div class="logo">
+            <img src="Logo Idea10 slight edit.png" alt="Logo" id="logo-image">
+            Early Website Design
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="gallery.html">Gallery</a></li> <!-- New Gallery page -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>        
     </header>
     <main>
-        <h1>Image Gallery</h1>
-        <section class="image-gallery">
-            <img src="image1.jpg" alt="Description of image 1">
-            <img src="image2.jpg" alt="Description of image 2">
-            <!-- Add more images as needed -->
+        <section id="image-gallery" class="image-gallery">
+            <!-- Images will be added here dynamically -->
         </section>
+
+        <nav class="pagination">
+            <button id="prev-btn" disabled>&larr; Previous</button>
+            <button id="next-btn" disabled>Next &rarr;</button>
+        </nav>
     </main>
     <footer>
-        <!-- Copy the footer from your index.html -->
+    Copyright &copy; 2023 Michael Connell. All rights reserved.
     </footer>
-    <script src="script.js"></script>    
+    <script src="gallery.js"></script> <!-- New JavaScript file for handling gallery functionality -->
 </body>
 </html>
+
