@@ -1,0 +1,65 @@
+<!-- Michael Connell Basic Website 2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js" type="module" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Idea10 slight edit.png" alt="Logo" id="logo-image">
+            Early Website Design
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="gallery.html">Gallery</a></li> <!-- New Gallery page -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Me</h1>
+        <p>If you have any questions or suggestions, feel free to reach out to me using the contact form below:</p>
+        <form id="contactForm" class="contact-form">
+            <!-- feedback form -->
+            <div id="options">
+                <p>Select your reasons for contacting us:</p>
+                <input type="checkbox" id="option1" name="option1" value="Feedback">
+                <label for="option1">Feedback</label><br>
+                <input type="checkbox" id="option2" name="option2" value="Question">
+                <label for="option2">Question</label><br>
+                <input type="checkbox" id="option3" name="option3" value="Support">
+                <label for="option3">Support</label><br>
+                <input type="checkbox" id="option4" name="option4" value="Suggestion">
+                <label for="option4">Suggestion</label><br>
+                <input type="checkbox" id="option5" name="option5" value="Complaint">
+                <label for="option5">Complaint</label><br>
+            </div>
+            <!-- End of feedback form -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Michael Connell</p>
+    </footer>
+</body>
+</html>

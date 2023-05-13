@@ -1,0 +1,59 @@
+<!-- Michael Connell Basic Website 2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Idea10 slight edit.png" alt="Logo" id="logo-image">
+            Early Website Design
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="gallery.html">Gallery</a></li> <!-- New Gallery page -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Calculator</h1>
+        <div id="calculator">
+            <div>
+                <label for="num1">Number 1:</label>
+                <input type="number" id="num1">
+            </div>
+            <div>
+                <label for="num2">Number 2:</label>
+                <input type="number" id="num2">
+            </div>
+            <div>
+                <label for="operation">Operation:</label>
+                <select id="operation">
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="divide">Divide</option>
+                </select>
+            </div>
+            <div>
+                <button onclick="calculateResult(); handleCalculatorUsage();">Calculate</button>
+            </div>
+            <div id="result">Result:</div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Michael Connell</p>
+    </footer>
+</body>
+</html>
