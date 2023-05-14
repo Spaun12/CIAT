@@ -273,6 +273,26 @@ button {
     cursor: pointer;
 }
 
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum width here */
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.image-gallery img {
+    width: 100%; /* This will make the image take the full width of its parent container (the figure element) */
+    height: auto; /* This will scale the height while maintaining aspect ratio */
+}
+
+.image-gallery figure {
+    margin: 1.66%; /* This will add some space around each figure */
+    box-sizing: border-box; /* This makes sure the width includes the margin and border, if any */
+}
 
 
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
   

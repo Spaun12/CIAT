@@ -1,43 +1,31 @@
 // gallery.js
 
-// Get the gallery element
-const gallery = document.getElementById('image-gallery');
+let captions = new Array(14);
+captions[0]="Cool Cyber Punk Image 1";
+captions[1]="Cool Cyber Punk Image 2";
+captions[2]="Cool Cyber Punk Image 3";
+captions[3]="Cool Cyber Punk Image 4";
+captions[4]="Cool Cyber Punk Image 5";
+captions[5]="Cool Cyber Punk Image 6";
+captions[6]="Cool Cyber Punk Image 7";
+captions[7]="Cool Cyber Punk Image 8";
+captions[8]="Cool Cyber Punk Image 9";
+captions[9]="Cool Cyber Punk Image 10";
+captions[10]="Cool Cyber Punk Image 11";
+captions[11]="Cool Cyber Punk Image 12";
+captions[12]="Cool Cyber Punk Image 13";
+captions[13]="Cool Cyber Punk Image 14";
 
-// Get the pagination buttons
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
 
-// Initialize the current page
-let currentPage = 1;
+let htmlCode = "";
 
-// Fetch images from the server
-function fetchImages(page) {
-  fetch(`/images?page=${page}`)
-    .then(response => response.json())
-    .then(data => {
-      // Clear the gallery
-      gallery.innerHTML = '';
-
-// Add images to the gallery
-for (const image of data.images) {
-    const img = document.createElement('img');
-    img.src = `Cyber Punk Images/${image}`; // Modify this line
-    gallery.appendChild(img);
-  }
-  
-
-      // Enable or disable pagination buttons
-      prevBtn.disabled = data.prevPage === null;
-      nextBtn.disabled = data.nextPage === null;
-
-      // Update the current page
-      currentPage = page;
-    });
+for (let i = 0; i < captions.length; i++) {
+   // Add 1 to i for the image number (to match your file names) and pad start with 0 to always have two digits
+   let imageNumber = (i + 1).toString().padStart(2, '0');
+   htmlCode += `<figure>
+   <img alt='' src='Cyber Punk ${imageNumber}.png' />
+   <figcaption>${captions[i]}</figcaption>
+</figure>`;
 }
 
-// Fetch images for the first page when the page loads
-fetchImages(currentPage);
-
-// Add event listeners for the pagination buttons
-prevBtn.addEventListener('click', () => fetchImages(currentPage - 1));
-nextBtn.addEventListener('click', () => fetchImages(currentPage + 1));
+document.getElementById("gallery").innerHTML = htmlCode;
