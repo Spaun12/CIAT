@@ -295,4 +295,8 @@ button {
     display: flex;
     justify-content: space-between;
 }
-  
+ 
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}

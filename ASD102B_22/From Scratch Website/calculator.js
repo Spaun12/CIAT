@@ -1,10 +1,14 @@
-// Calculator
+// Calculator updated for jQuery challenge
 let calculatorUsageCount = 0;
 
 function calculateResult() {
-    const num1 = parseFloat(document.getElementById("num1").value);
-    const num2 = parseFloat(document.getElementById("num2").value);
-    const operation = document.getElementById("operation").value;
+    // const num1 = parseFloat(document.getElementById("num1").value);
+    // const num2 = parseFloat(document.getElementById("num2").value);
+    // const operation = document.getElementById("operation").value;
+
+    const num1 = parseFloat($("#num1").val());
+    const num2 = parseFloat($("#num2").val());
+    const operation = $("#operation").val();
 
     let result;
 
@@ -23,18 +27,21 @@ function calculateResult() {
             break;
     }
 
-    document.getElementById("result").innerText = `Result: ${result}`;
+    // document.getElementById("result").innerText = `Result: ${result}`;
+    $("#result").text(`Result: ${result}`);
 }
 
 function handleCalculatorUsage() {
-    const calculatorContainer = document.getElementById("calculator");
+    // const calculatorContainer = document.getElementById("calculator");
+    const calculatorContainer = $("#calculator");
     calculatorUsageCount++;
 
     if (calculatorUsageCount > 3) {
-        calculatorContainer.innerHTML = "Warning! Website disabled.";
+        // calculatorContainer.innerHTML = "Warning! Website disabled.";
+        calculatorContainer.html("Warning! Website disabled.");
         setTimeout(() => {
             calculatorUsageCount = 0;
-            calculatorContainer.innerHTML = `
+            calculatorContainer.html(`
                 <div>
                     <label for="num1">Number 1:</label>
                     <input type="number" id="num1">
@@ -55,7 +62,7 @@ function handleCalculatorUsage() {
                 <div>
                     <button onclick="calculateResult(); handleCalculatorUsage();">Calculate</button>
                 </div>
-                <div id="result">Result:</div>`;
+                <div id="result">Result:</div>`);
         }, 10 * 1000);
     }
 }
