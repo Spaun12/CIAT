@@ -13,7 +13,7 @@ def mean(lst):
     :param lst: List of numbers
     :return: Mean of the numbers
     """
-    return statistics.mean(lst)
+    return round(statistics.mean(lst), 2)
 
 def median(lst):
     """
@@ -24,7 +24,7 @@ def median(lst):
     :param lst: List of numbers
     :return: Median of the numbers
     """
-    return statistics.median(lst)
+    return round(statistics.median(lst), 2)
 
 def mode(lst):
     """
