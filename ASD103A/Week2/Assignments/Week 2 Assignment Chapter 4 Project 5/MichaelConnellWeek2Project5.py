@@ -28,6 +28,7 @@ class Array:
     def __init__(self, capacity, fillValue=None):
         # The array starts with a given capacity, all items are None initially
         self._items = list([fillValue]*capacity)
+        self._original_capacity = capacity  # Store the original capacity to use when resizing
         self._logicalSize = 0  # Tracks how many items are actually in the array
 
     # This function allows calling len(Array) to get its physical size (capacity)
@@ -62,6 +63,23 @@ class Array:
         else:
             return False
 
+    # This function removes an item at the given position, shifting other items to the left
+    def remove(self, index):
+        if index >= 0 and index < self._logicalSize:
+            for i in range(index, self._logicalSize - 1):
+                self._items[i] = self._items[i+1]
+            self._items[self._logicalSize - 1] = None
+            self._logicalSize -= 1
+            # Shrink the physical size of the array if it's larger than the logical size
+            self._items = self._items[:self._logicalSize]
+            
+    # This function expands the array back to its original size or more
+    def expand(self, new_capacity=None):
+        if new_capacity is None:
+            new_capacity = self._original_capacity
+        if new_capacity > len(self):
+            self._items.extend([None] * (new_capacity - len(self)))
+
 # This function prompts the user to create an array, entering its size and items
 def create_array(array_number):
     capacity = int(input(f"Enter the initial capacity of array {array_number}: "))
@@ -74,7 +92,7 @@ def create_array(array_number):
 def main():
     # Main loop, continues until the user chooses to exit
     while True:
-        print("\nOptions:")
+        print("\\nOptions:")
         print("1 - Create and manipulate arrays")
         print("2 - Exit")
         option = int(input("Enter an option: "))
@@ -88,7 +106,7 @@ def main():
                 array2 = create_array(2)  # Optionally create a second array
 
             while True:
-                print("\nOptions for comparing arrays:")
+                print("\\nOptions for comparing arrays:")
                 print("1 - Compare the entire arrays")
                 print("2 - Compare specific items in the arrays")
                 print("3 - Start again")
@@ -103,7 +121,7 @@ def main():
                     else:
                         print("No second array to compare with.")
                 elif compare_option == 2 and array2 is not None:
-            # Compare specific items in the arrays
+                    # Compare specific items in the arrays
                     index = int(input("Enter the index of the item to compare: "))
                     if index < len(array1) and index < len(array2):  # Check if the index exists in both arrays
                         print(f"Item in array 1 at position {index}:", array1._items[index])
@@ -111,7 +129,6 @@ def main():
                         print("The items are equal" if array1._items[index] == array2._items[index] else "The items are not equal.")
                     else:
                         print("Index is out of range in one or both arrays. Please try again.")
-
                 elif compare_option == 3:
                     # Start again
                     break
