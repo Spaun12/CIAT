@@ -5,7 +5,7 @@ from ReverseWordToDo import reverse_word
 
 def test_reverse_word():
     """
-    This function tests the reverse_word function with some funny phrases.
+    This function tests the reverse_word function with some funny phrases since it's last week.
     """
     # List of test phrases
     test_phrases = [
