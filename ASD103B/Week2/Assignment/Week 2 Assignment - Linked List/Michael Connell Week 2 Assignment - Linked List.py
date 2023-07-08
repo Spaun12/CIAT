@@ -1,8 +1,6 @@
 #Student: Michael Connell
 # Date: 2023-07-08
-
 #Version 1
-
 class Node:
     """ 
     This is the story of Node, the superhero of our LinkedList. 
