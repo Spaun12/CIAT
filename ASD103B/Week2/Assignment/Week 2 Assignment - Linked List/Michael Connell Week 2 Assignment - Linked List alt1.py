@@ -116,6 +116,7 @@ def superhero_linked_list_game():
             print("\nThanks for playing the Node superhero game!")
             break
         else:
-            print("\nInvalid choice. Please choose a valid option.")
-    
-    
+            print("\nInvalid choice. Please choose a valid option.") 
+        
+if __name__ == "__main__":
+    superhero_linked_list_game()
