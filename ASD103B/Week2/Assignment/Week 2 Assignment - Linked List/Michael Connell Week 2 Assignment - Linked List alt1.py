@@ -69,7 +69,7 @@ class LinkedList:
 
     def search_node(self, target):
         """
-        Requirement 6: Is our superhero/Node in the city? Let's send up the signal to check!
+        Requirement 6: Is our superhero/Node in the city? Let's send up the signal to!
         """
         node = self.head
         while node:  # Traverse the city
