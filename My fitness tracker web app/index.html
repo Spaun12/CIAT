@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="physical">
+        <h1>Physical Metrics</h1>
+        <form method="POST">
+            <!-- Field for weight input -->
+            <label for="weight">Enter weight (kg):</label>
+            <input type="number" id="weight" name="weight" step="0.1" required>
+    
+            <!-- Field for waist size input -->
+            <label for="waist_size">Enter waist size (cm):</label>
+            <input type="number" id="waist_size" name="waist_size" step="0.1">
+    
+            <!-- Field for neck size input -->
+            <label for="neck_size">Enter neck size (cm):</label>
+            <input type="number" id="neck_size" name="neck_size" step="0.1">
+    
+            <!-- Field for calf size input -->
+            <label for="calf_size">Enter calf size (cm):</label>
+            <input type="number" id="calf_size" name="calf_size" step="0.1">
+    
+            <!-- Field for chest size input -->
+            <label for="chest_size">Enter chest size (cm):</label>
+            <input type="number" id="chest_size" name="chest_size" step="0.1">
+    
+            <!-- Field for hip size input -->
+            <label for="hip_size">Enter hip size (cm):</label>
+            <input type="number" id="hip_size" name="hip_size" step="0.1">
+    
+            <!-- Field for body fat percentage input -->
+            <label for="body_fat_percentage">Enter body fat percentage (%):</label>
+            <input type="number" id="body_fat_percentage" name="body_fat_percentage" step="0.1">
+    
+            <!-- Field for resting heart rate input -->
+            <label for="resting_heart_rate">Enter resting heart rate (bpm):</label>
+            <input type="number" id="resting_heart_rate" name="resting_heart_rate" step="1">
+    
+            <!-- Field for systolic blood pressure input -->
+            <label for="blood_pressure_systolic">Enter systolic blood pressure (mm Hg):</label>
+            <input type="number" id="blood_pressure_systolic" name="blood_pressure_systolic" step="1">
+    
+            <!-- Field for diastolic blood pressure input -->
+            <label for="blood_pressure_diastolic">Enter diastolic blood pressure (mm Hg):</label>
+            <input type="number" id="blood_pressure_diastolic" name="blood_pressure_diastolic" step="1">
+
+            <button type="submit">Submit</button>
+        </form>        
+        <h2>Your weight entries:</h2>
+        <ul>
+            {% for entry in weights %}
+                <li>{{ entry.date_logged.strftime('%Y-%m-%d') }}: {{ entry.weight }} kg</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section id="nutrition">
+        <h1>Nutrition Tracker</h1>
+        <form method="POST">
+            <!-- Field for meal name -->
+            <label for="meal_name">Meal:</label>
+            <input type="text" id="meal_name" name="meal_name" required>
+        
+            <!-- Field for food type -->
+            <label for="food_type">Food:</label>
+            <input type="text" id="food_type" name="food_type" required>
+        
+            <!-- Field for quantity -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" step="0.1" required>
+        
+            <!-- Field for time of meal -->
+            <label for="meal_time">Time of Meal:</label>
+            <input type="time" id="meal_time" name="meal_time" required>
+    
+            <!-- Field for water intake -->
+            <label for="water_intake">Water Intake (ml):</label>
+            <input type="number" id="water_intake" name="water_intake" step="0.1">
+        
+            <button type="submit">Submit</button>
+        </form>
+    <!-- Section to display nutrition logs -->
+    <h2>Your Nutrition Logs:</h2>
+    <ul>
+        {% for log in nutrition_logs %}
+            <li>
+                {{ log.date_logged.strftime('%Y-%m-%d') }}: {{ log.meal_name }} - {{ log.food_type }},
+                Quantity: {{ log.quantity }},
+                Meal Time: {{ log.meal_time.strftime('%H:%M') }},
+                Water Intake: {{ log.water_intake }} ml
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+    <section id="exercise">
+        <h1>Exercise Log</h1>
+        <form method="POST" action="/physical_metrics">    
+            <!-- Field for exercise name input -->
+            <label for="exercise_name">Exercise Name:</label>
+            <input type="text" id="exercise_name" name="exercise_name" required>
+    
+            <!-- Field for exercise type input -->
+            <label for="exercise_type">Exercise Type:</label>
+            <input type="text" id="exercise_type" name="exercise_type" required>
+    
+            <!-- Field for duration input -->
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" step="1" required>
+    
+            <!-- Field for intensity input -->
+            <label for="intensity">Intensity (Optional - Light, Moderate, High):</label>
+            <input type="text" id="intensity" name="intensity">
+    
+            <!-- Field for distance input -->
+            <label for="distance">Distance covered (Optional - miles):</label>
+            <input type="number" id="distance" name="distance" step="0.1">
+    
+            <button type="submit">Submit</button>
+        </form>
+        <h2>Your exercise logs:</h2>
+        <ul>
+            {% for log in exercise_logs %}
+                <li>{{ log.date_logged.strftime('%Y-%m-%d') }}: {{ log.exercise_name }} ({{ log.exercise_type }}) - {{ log.duration }} minutes {% if log.intensity %} at {{ log.intensity }} intensity {% endif %} {% if log.distance %} covering {{ log.distance }} miles {% endif %}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    
+    <!-- Other sections will go here -->
+</body>
+<!-- <script src="script.js"></script> -->
+</html>
