@@ -1,0 +1,15 @@
+Tue Nov 07 12:29:04 CST 2023
+               total        used        free      shared  buff/cache   available
+Mem:           15141        1896       10388          63        2856       12857
+Swap:           2047           0        2047
+-------------------------------------------------
+Tue Nov 07 12:34:04 CST 2023
+               total        used        free      shared  buff/cache   available
+Mem:           15141        1981       10281          74        2878       12761
+Swap:           2047           0        2047
+-------------------------------------------------
+Tue Nov 07 12:39:04 CST 2023
+               total        used        free      shared  buff/cache   available
+Mem:           15141        2257        9838          72        3045       12486
+Swap:           2047           0        2047
+-------------------------------------------------

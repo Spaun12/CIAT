@@ -1,0 +1,65 @@
+
+Narrative for Section C
+
+1. Creating a New User Group (newUserGroup)
+   The first step was to create a new user group named 'newUserGroup'. This was successfully done using the command 'groupadd newUserGroup'.
+
+2. Adding User to the New Group (newUserGroup)
+   Next, I used the 'usermod -a -G newUserGroup new_username' command to add the existing user ('new_username') to this new group.
+
+3. Changing the Primary Group of User to 'newUserGroup'
+   To make 'newUserGroup' the primary group for 'new_username', the command 'usermod -g newUserGroup new_username' was executed. After this, a quick check using the 'groups new_username' command confirmed that 'newUserGroup' was indeed the primary group for the user.
+
+4. Creating a Temporary User Group (tempUA)
+   Due to a roadblock in deleting 'newUserGroup' (it was the primary group for 'new_username'), a temporary group named 'tempUA' was created using 'groupadd tempUA'.
+
+5. Changing the Primary Group to 'tempUA'
+   The primary group for 'new_username' was then switched to 'tempUA' using the command 'usermod -g tempUA new_username'.
+
+6. Deleting the Original User Group (newUserGroup)
+   With 'new_username' now belonging to a different primary group ('tempUA'), the original 'newUserGroup' could be safely deleted using 'groupdel newUserGroup'.
+
+7. Final Check
+   A final 'groups new_username' command confirmed that 'new_username' was now part of the 'tempUA' group, and 'newUserGroup' was successfully removed.
+
+
+section_d_summary = """
+Section D: Setting Permissions and Ownership
+
+1. Created a directory called Week3_UserGroupManagement.
+   - Command: mkdir Week3_UserGroupManagement
+
+2. Attempted to change the owner and group to new_username and newuser_name, but the group was invalid.
+   - Command: chown new_username:newuser_name Week3_UserGroupManagment
+   - Issue: chown: invalid group: ‘new_username:newuser_name’
+
+3. Changed the owner to 'new_username' and group to 'tempUA'.
+   - Command: chown new_username:tempUA Week3_UserGroupManagement
+
+4. Changed the permissions to 700 (only owner can read, write, and execute).
+   - Command: chmod 700 Week3_UserGroupManagement
+
+5. Verified permissions and ownership with 'ls -l'.
+   - Command: ls -l
+   - Output showed owner as 'new_username' and group as 'tempUA' with permissions set to 700.
+
+6. Tried to change the group to 'tempUA' again but mistyped the command.
+   - Command: ~chgrp tempUA Week3_UserGroupManagement
+   - Issue: Command not found.
+
+7. Changed the group back to 'tempUA' successfully.
+   - Command: chgrp tempUA Week3_UserGroupManagement
+
+8. Modified permissions to 740 (owner can read, write, execute; group can read).
+   - Command: chmod 740 Week3_UserGroupManagement
+
+9. Created a new group named 'Week3_Group' to make it assignment-specific.
+   - Command: groupadd Week3_Group
+
+10. Changed the directory's group to 'Week3_Group'.
+    - Command: chgrp Week3_Group Week3_UserGroupManagement
+
+11. Final verification with 'ls -l' showed the owner as 'new_username' and group as 'Week3_Group' with permissions set to 740.
+
+
+

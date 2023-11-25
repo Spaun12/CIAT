@@ -1,0 +1,11 @@
+
+Narrative for Section B: Modifying User Accounts
+
+1. Modify User Attributes: 
+   Used 'usermod -l new_username old_username' to change the username of the user created in Section A.
+
+2. Change User Password: 
+   Executed 'passwd new_username' to change the password for the newly renamed user account.
+
+3. View User Details: 
+   Ran 'id new_username' to display detailed information about the user, including its group memberships.

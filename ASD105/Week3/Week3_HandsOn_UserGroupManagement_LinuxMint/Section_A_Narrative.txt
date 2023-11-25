@@ -1,0 +1,17 @@
+
+Narrative for Section A: Creating User Accounts
+
+1. Open Terminal: 
+   Started by opening the terminal in Linux Mint.
+
+2. Switch to Root User: 
+   Used the command 'sudo su' to switch to the root user to gain administrative privileges.
+
+3. Create New User: 
+   Used 'useradd -m -s /bin/bash username' to create a new user account with a home directory and /bin/bash as the default shell.
+
+4. Set User Password: 
+   Utilized the 'passwd username' command to set a password for the new user account.
+
+5. Verify Home Directory: 
+   Checked that a home directory was created for the user by running 'ls /home'.
