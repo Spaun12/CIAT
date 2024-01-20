@@ -18,6 +18,7 @@ You can copy paste my markdown photo insert as following:
 ## 🛠️ Description
 <!--Remove the below lines and add yours -->
 Simple Caesar Cipher encryptor and decryptor built with python
+Slight edits and testing file added by https://github.com/Spaun12 
 
 ## ⚙️ Languages or Frameworks Used
 <!--Remove the below lines and add yours -->
@@ -35,5 +36,6 @@ khoor
 
 ## 🤖 Author
 <!--Remove the below lines and add yours -->
-[GitHub](https://github.com/FH089)
+Original [GitHub](https://github.com/FH089)
+Testing and slight edits: [GitHub](https://github.com/Spaun12)
 
