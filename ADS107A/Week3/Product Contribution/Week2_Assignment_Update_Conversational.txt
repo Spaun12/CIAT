@@ -1,0 +1,34 @@
+
+Week 2 Assignment Update: Rolling with the Changes in Python Dice Roller
+----------------------------------------------------------------------
+Hey there!
+
+So, I've been diving into this cool Tkinter-based Python Dice Roller project. It's been quite a journey, and I'd love to share what I've been up to.
+
+1. **What's New**:
+   - I've jazzed up the original dice roller. Now, it's not just about rolling a six-sider - you've got options from D4s to D20s, just like in Dungeons & Dragons! 
+   - Plus, there's this nifty dropdown menu I added for picking your dice. Neat, right?
+
+2. **My Toolbox**:
+   - Forked the original code from GitHub, got my hands dirty with VSCode, and kept things organized with GitHub Desktop. 
+   - Whenever I hit a snag, Discord was my go-to for a quick brainstorm with classmates. Their tips were a game-changer!
+
+3. **The Nitty-Gritty**:
+   - Testing each dice option was like a mini-adventure. I wanted to make sure that when you choose a D10, it actually feels like rolling one.
+   - Every little change got a green light from GitHub Desktop before joining the party on my `dice-type-feature` branch.
+
+4. **Teamwork Makes the Dream Work**:
+   - Throwing ideas around on Discord really got the creative juices flowing. My classmates’ feedback was like finding treasure in a dungeon – priceless and enlightening.
+   - After tweaking the UI and squashing some pesky bugs, I mustered the courage to create a pull request. Fingers crossed!
+
+5. **Reflections and High Fives**:
+   - This whole experience was like leveling up in real life. Got to play with Git, GitHub Desktop, and VSCode – all while learning the ropes of GUI magic with Tkinter.
+   - The biggest takeaway? Teamwork. Discussing ideas, sharing progress, and getting feedback made all the difference.
+
+6. **Looking Ahead**:
+   - I’m thinking of adding a history log to track past rolls. Could be handy, right?
+   - Now, it's waiting time for the pull request review. Can’t wait to see how it pans out!
+   - Once it’s all merged and tidy, I’ll sync my fork with the main repo to keep everything up-to-date.
+
+Catch you later,
+[Your Name]

@@ -1,0 +1,15 @@
+
+Messaging System on a Mobile Phone: Requirements Model
+
+Attributes:
+- chatHistory: Stores message logs.
+- contactList: Contains contact details.
+- notificationSettings: Manages alert preferences.
+
+Operations:
+- sendMessage(content): Sends a message.
+- receiveMessage(): Retrieves incoming messages.
+- deleteConversation(contact): Deletes a chat with a specific contact.
+
+Real-World Experience Considerations:
+- Features useful in messaging apps, such as message search, media sharing, and encryption.

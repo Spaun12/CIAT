@@ -1,0 +1,36 @@
+
+Project Report: Temperature Converter
+
+Introduction:
+This report details the enhancements to the Temperature Converter application, a web-based tool originally lacking core functionality. The focus was on developing missing features, improving accessibility, and aligning with software development and design principles.
+
+Development Setup:
+The project was set up using Visual Studio Code as the code editor, after forking the original repository from GitHub. Initially, the codebase contained the structure and styling but lacked the necessary conversion logic.
+
+Functionality Implemented:
+The core functionality implemented was the temperature conversion logic. This involved writing JavaScript functions to convert temperatures between Fahrenheit and Celsius. The thought process was centered on creating efficient, accurate, and easy-to-understand code.
+
+Accessibility Enhancements:
+Understanding the importance of accessibility, 'aria-label' attributes were added to input fields. This decision was guided by the need to make the application usable for people with visual impairments, particularly those relying on screen readers.
+
+Testing Process:
+The functionality was manually tested to ensure accuracy. Additionally, the application was shared with peers in my cohort, whose feedback helped validate the user experience and functionality.
+
+Project Overview:
+The Temperature Converter, initially a basic prototype, became a fully functional and accessible tool, serving both educational and practical purposes.
+
+Impact of Changes:
+The enhancements significantly improved the application's usability and accessibility. The project transitioned from a non-functional state to a valuable tool for diverse users, including those with disabilities.
+
+Use-Cases and Requirements:
+- User Story 1: John, a student, requires an efficient tool for converting temperatures for his assignments.
+- User Story 2: Emily, visually impaired, needs an accessible application for her daily temperature conversion tasks.
+
+Conclusion:
+This project offered practical experience in web development, with a focus on JavaScript, and highlighted the critical role of accessibility in software design.
+
+Contributor Note:
+- Contributor: Michael Connell
+- Date: [Insert Date]
+- Purpose: College project, demonstrating the application of course learnings and collaborative feedback.
+

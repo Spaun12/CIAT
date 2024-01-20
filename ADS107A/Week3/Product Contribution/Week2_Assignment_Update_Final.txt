@@ -1,0 +1,36 @@
+
+Week 2 Assignment Update: Contributing to an Open Source Project
+---------------------------------------------------------------
+Project: Python Dice Roller (Tkinter-based application)
+Contributor: [Your Name]
+Tools Used: GitHub, Visual Studio Code (VSCode), GitHub Desktop, Discord
+
+1. **Overview of Changes**:
+   - Enhanced the original six-sided dice roller to include functionality for rolling different types of dice (4, 6, 8, 10, 12, 20 sides).
+   - Implemented a dropdown menu for dice type selection in the Tkinter GUI.
+
+2. **Development Process using VSCode, GitHub, and GitHub Desktop**:
+   - Forked the original repository and cloned it using GitHub Desktop.
+   - Created a new branch named 'dice-type-feature' for the updates.
+   - Integrated new functionality for selecting different dice types, ensuring compatibility with the existing Tkinter setup.
+
+3. **Testing, Committing, and Pushing Changes**:
+   - Conducted thorough testing for each dice type within VSCode.
+   - Staged and committed the changes with descriptive messages using GitHub Desktop.
+   - Pushed the changes to the 'dice-type-feature' branch on GitHub.
+
+4. **Collaboration, Feedback, and Creating a Pull Request**:
+   - Collaborated with classmates via Discord, sharing progress and receiving feedback.
+   - Utilized the feedback to refine the code and UI.
+   - Created a pull request on GitHub to merge the 'dice-type-feature' branch into the main branch of the original repository.
+
+5. **Reflection and Learning**:
+   - Gained practical experience in using Git for version control, GitHub Desktop for managing repositories, and VSCode for Python development.
+   - Learned the importance of collaboration and peer review, utilizing Discord as a platform for sharing ideas and receiving constructive feedback.
+   - Enhanced understanding of GUI development with Tkinter and the process of contributing to open-source projects.
+
+6. **Future Enhancements and Final Steps**:
+   - Plan to explore adding a history feature to track past dice rolls.
+   - Awaiting review of the pull request by the original repository maintainers.
+   - Intent to sync the fork with the original repository post-merge to keep it up-to-date.
+

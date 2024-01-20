@@ -1,0 +1,16 @@
+
+Bank Account: Requirements Model
+
+Attributes:
+- accountBalance: Current available balance.
+- transactionHistory: Record of all transactions.
+- accountType: Type of account (e.g., savings, checking).
+
+Operations:
+- deposit(amount): Adds money to the account.
+- withdraw(amount): Removes money from the account.
+- transferFunds(recipient, amount): Moves money to another account.
+
+Real-World Experience Considerations:
+- Security features expected in banking apps.
+- Functionalities like scheduled payments, budget tracking, and fraud alerts.

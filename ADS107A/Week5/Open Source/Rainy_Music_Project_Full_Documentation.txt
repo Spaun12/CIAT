@@ -1,0 +1,34 @@
+
+My contribution to the "Rainy Music" project involved adding customizable theme functionality to enhance the user experience. This feature allows users to select between different visual themes, catering to personal preferences and improving accessibility. Below is a detailed overview of each step of my contribution:
+
+1. Project Selection: Chosen due to my background as a musician and interest in software development, specifically in user interface design.
+
+2. Development Setup: Utilized GitHub and Visual Studio Code, updated the system with the necessary dearpygui and pygame libraries.
+
+3. Work Item Selection: Focused on theme functionality to enhance user customization and application aesthetics.
+
+4. Implementation and Documentation: Created new themes and integrated a theme selection option in the settings window. Ensured consistency and compatibility across UI elements.
+
+5. Pre-Checkin Checks and Reviews: Conducted code linting, received feedback from classmates, and made adjustments based on their suggestions.
+
+6. Testing and Deployment: Performed functional and user experience testing, ensuring seamless theme switching and positive user feedback.
+
+7. Project Overview: Described "Rainy Music" as a simple, efficient, and user-friendly open-source music player.
+
+8. Impact of Change: Discussed the enhancement in user experience and application appeal through the added theme functionality.
+
+9. Use-Cases and Requirements: Illustrated use-cases such as theme switching by users, using User Stories and Entity-Relationship Diagrams.
+
+10. Design Considerations: Emphasized on consistency, readability, and customizability in the theme design process.
+
+Assignment Submission Details
+
+1. Report: The sections provided above collectively constitute the comprehensive report, detailing my contribution to the "Rainy Music" project. This report covers the project selection, development setup, implementation, testing, and the impact of the theme functionality I added.
+
+2. GitHub Pull Request Link and Screenshots: For a detailed review of my contribution, please refer to my GitHub pull request at https://github.com/Dev1511/Rainy-Music-Player/pull/1. The report includes screenshots demonstrating the new theme functionality within the application.
+
+3. Development Process Write-Up: Included in the report is a thorough write-up of the entire development process. This covers aspects such as the implementation of the theme feature, testing procedures, and how I incorporated feedback from peers.
+
+4. High-Level Project Description: A section of the report provides a high-level overview of the "Rainy Music" project, outlining its purpose, features, and its significance in the open-source community.
+
+5. Use-Cases and Requirements Write-Up: The use-cases and requirements addressed by my contribution are detailed in the report, using User Stories and Entity-Relationship Diagrams to illustrate how my work integrates with the overall functionality of the application.

@@ -1,0 +1,32 @@
+
+Project Report: Temperature Converter
+
+Introduction:
+This report documents the enhancements made to a Temperature Converter web application, emphasizing software development principles, interface design, and accessibility.
+
+Development Setup:
+Developed using Visual Studio Code, the project was forked from GitHub. The initial code structure was present but lacked functional implementation of the core feature.
+
+Functionality Implemented:
+Implemented the key feature of converting temperatures between Fahrenheit and Celsius. Enhanced accessibility by adding 'aria-label' attributes to the input fields.
+
+Testing Process:
+Conducted manual testing for functionality and accuracy. Showcased the application to peers in the cohort, receiving positive feedback and validation of the tool's effectiveness.
+
+Project Overview:
+The Temperature Converter, initially a non-functional prototype, is now a fully operational tool, useful in educational settings and daily life.
+
+Impact of Your Changes:
+The contributions transformed the application into a working model, improving its usability and accessibility, especially for users with disabilities.
+
+Use-Cases and Requirements:
+- User Story 1: John, a science student, needs a quick and accurate way to convert temperatures for lab reports.
+- User Story 2: Emily, visually impaired, requires a screen-reader-friendly application for her temperature conversion needs.
+
+Conclusion:
+This project provided practical experience in web development, particularly in JavaScript, and underscored the importance of accessibility in software design.
+
+Contributor Note:
+- Contributor: Michael Connell
+- Date: [Insert Date]
+- Purpose: College project, demonstrating practical application of course learnings and peer collaboration.
