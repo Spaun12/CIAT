@@ -36,6 +36,6 @@ khoor
 
 ## 🤖 Author
 <!--Remove the below lines and add yours -->
-Original [GitHub](https://github.com/FH089)
+Original: [GitHub](https://github.com/FH089)
 Testing and slight edits: [GitHub](https://github.com/Spaun12)
 
