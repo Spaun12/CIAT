@@ -1,0 +1,42 @@
+
+Statement of Scope for University Course Grade Analysis Application
+
+Project Title: University Course Grade Analysis Application
+
+Background: This application is designed to assist university administrators and educators in analyzing the performance of students in various courses. By providing an average grade for each course in a specific term, stakeholders can identify trends, areas for improvement, and the overall effectiveness of the course material and instruction.
+
+Objective: The primary objective is to develop an application that calculates and reports the average grade obtained by students in each course for a given academic term.
+
+Scope Inclusions:
+1. Data Collection: The application will interface with the university's existing database to retrieve relevant data, including course names, student enrolment details, and grades.
+2. Grade Analysis: It will calculate the average grade for each course offered in a specified term.
+3. Reporting: The application will generate reports that list courses alongside their average grades for the term in question.
+4. User Interface: A user-friendly interface will allow users to select a specific academic term and view the corresponding average grades for courses.
+5. Data Security: Implement standard security measures to ensure the confidentiality and integrity of student data.
+
+Scope Exclusions:
+1. Individual Student Performance: The application will not analyze or report individual student performance or grades.
+2. Historical Data Comparison: It will not compare current data with historical data across different terms or academic years.
+3. Predictive Analysis: The application is not designed for predictive analytics or forecasting future grade trends.
+4. Non-Grade Data Analysis: Analysis of non-grade data such as attendance, participation, or demographic information is not included.
+5. Cross-Course Comparison: It will not provide functionality to compare average grades between courses.
+
+Assumptions:
+- The university's database is up-to-date and accurately reflects the grades and courses for the specified term.
+- Users of the application will have authorized access to the grade data.
+
+Constraints:
+- The application will be developed within a predefined timeline and budget.
+- It will be compatible with the university's existing database and IT infrastructure.
+
+Success Criteria:
+- Accurate calculation of average grades for each course.
+- User-friendly interface for selecting terms and viewing reports.
+- Positive feedback from a test group of university administrators and educators.
+
+References
+Selleo. (2023, Aug 7). How To Write Project Scope In Software Development. Retrieved January 26, 2024, from https://www.selleo.com/blog/how-to-write-project-scope-in-software-development
+
+ScienceSoft. (n.d.). ScienceSoft’s Approach to Defining Project Scope. Retrieved January 26, 2024, from https://www.scnsoft.com/about/scope
+
+Asana. (2022, December 18). How to Write a Project Scope in 8 Easy Steps [2023]. Retrieved January 26, 2024, from https://asana.com/resources/how-to-write-project-scope 

@@ -1,0 +1,80 @@
+
+1. Example of a Product Metric for Mobile App Development:
+   Answer: Number of static screen displays.
+   Explanation: This metric directly relates to the product's characteristics, making it relevant for app development.
+
+2. Key Consideration for Software Metrics Adoption and Use:
+   Answer: Intuitiveness and ease of computation.
+   Explanation: Metrics must be easy to understand and calculate for widespread use.
+
+3. Steps in Using Software Metrics Effectively:
+   Answer: Derive measures and metrics, collect data, and analyze them against historical data.
+   Explanation: This process ensures metrics are relevant and provide meaningful insights.
+
+4. Difference Between Measure and Metric in Software Engineering:
+   Answer: A measure is a single data point, while a metric relates individual measures.
+   Explanation: Measures are basic data points, whereas metrics are derived from these points for broader understanding.
+
+5. Primary Work Product of Software Metrics:
+   Answer: A set of software metrics providing insight into the process and project.
+   Explanation: These metrics help in understanding and improving software development processes.
+
+6. Importance of Measurement in Software Engineering:
+   Answer: To provide objective criteria for decision-making.
+   Explanation: Measurements offer quantifiable data that aid in making informed decisions.
+
+7. Relation of an Indicator to Software Metrics:
+   Answer: An indicator is a metric or combination of metrics that provides insight.
+   Explanation: Indicators help in understanding and interpreting metrics meaningfully.
+
+8. Characteristics of Successful Software Projects:
+   Answer: Clear and well-understood requirements, active user participation, and realistic schedules.
+   Explanation: These factors contribute to the effective execution and delivery of software projects.
+
+9. Primary Categories in Software Project Management:
+   Answer: People, product, process, and project.
+   Explanation: Effective management focuses on these key areas for successful project completion.
+
+10. First Step in Software Project Planning:
+   Answer: Defining project tasks.
+   Explanation: This involves setting a clear roadmap for what needs to be accomplished.
+
+11. Definition of Scope in Software Project Management:
+   Answer: By answering questions related to context, information objectives, function, and performance.
+   Explanation: Scope definition is crucial for setting the project's direction and boundaries.
+
+12. Practice Areas in People Capability Maturity Model (People-CMM):
+   Answer: Ten practice areas.
+   Explanation: These areas focus on managing and developing the workforce in software organizations.
+
+13. Agile Philosophy Emphasis for Project Teams:
+   Answer: Small and highly motivated teams.
+   Explanation: Agile methods prioritize small, efficient teams for effective project execution.
+
+14. Primary Role of a Team Leader in Software Projects:
+   Answer: Fostering collaboration and trust.
+   Explanation: Team leaders should create an environment conducive to teamwork and communication.
+
+15. Importance of Assessing Project Feasibility:
+   Answer: To determine if the system can be created with available resources and if it aligns with business needs.
+   Explanation: Feasibility assessment ensures the project's practicality and alignment with objectives.
+
+16. Use of UCP (Use Case Points) in Software Estimation:
+   Answer: Estimating the projected “size” of a software project based on use cases.
+   Explanation: UCP helps estimate project size by evaluating the complexity of use cases.
+
+17. Meaning of LOC in Software Estimation:
+   Answer: Lines of Code.
+   Explanation: LOC is used to quantify the size of a software project.
+
+18. Primary Unit of Work in Agile Development Estimation:
+   Answer: User Stories.
+   Explanation: User stories provide a functional perspective for effort estimation in Agile development.
+
+19. Basis of Empirical Estimation Models for Software Cost and Effort:
+   Answer: Historical project data.
+   Explanation: These models use past data to predict future efforts and costs.
+
+20. Limitation of Delaying Estimation in Projects:
+   Answer: It may lead to serious errors in estimates as time progresses.
+   Explanation: Delaying estimation reduces the time available for accurate assessment, increasing error likelihood.

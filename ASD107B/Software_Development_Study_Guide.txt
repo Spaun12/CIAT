@@ -1,0 +1,60 @@
+
+1. Which of the following is an example of a product metric for MobileApp development?
+   Correct Answer: Number of static screen displays
+   Explanation: In mobile app development, the number of static screen displays is a direct product metric, as it measures a tangible aspect of the app.
+
+2. Attributes of Effective Software Metrics According to Ejiogu
+   Correct Answer: Intuitiveness and ease of computation
+   Explanation: Metrics need to be intuitive and easy to compute to be widely adopted. Complex and non-intuitive metrics can be challenging to understand and use effectively.
+
+3. Difference Between Software Analytics and Software Metrics
+   Correct Answer: Software metrics focus on measurement, while software analytics provide insights and empower decision-making.
+   Explanation: Software metrics are about gathering and measuring data, whereas software analytics involves interpreting these metrics to make informed decisions.
+
+4. First Software Project Management Activity
+   Correct Answer: Determining software scope
+   Explanation: The first activity in software project management often involves determining the scope of the software, defining what the software will and will not include.
+
+5. Practice Areas in People Capability Maturity Model (People-CMM)
+   Correct Answer: Ten practice areas
+   Explanation: The People-CMM defines ten practice areas for managing and developing the workforce in software organizations.
+
+6. Purpose of Problem Decomposition in Software Requirements Analysis
+   Correct Answer: To break down complex problems into more manageable parts
+   Explanation: Decomposing problems in software requirements analysis helps in managing complexity by breaking down larger problems into smaller, more manageable parts.
+
+7. Significance of Team Member Competency According to Cockburn and Highsmith
+   Correct Answer: It is the most critical factor for success
+   Explanation: Cockburn and Highsmith highlight the importance of team member competency as a crucial factor for the success of a software project.
+
+8. Characteristic Associated with Jelled Teams
+   Correct Answer: Sense of eliteness
+   Explanation: Jelled teams are known for their sense of eliteness, which contributes to their effectiveness and cohesion.
+
+9. Key Characteristic of Agile Philosophy
+   Correct Answer: Early incremental delivery
+   Explanation: Agile philosophy emphasizes early and incremental delivery of software, promoting flexibility and continuous improvement.
+
+10. Basis of Empirical Estimation Models for Software Cost and Effort
+   Correct Answer: Historical project data
+   Explanation: Empirical estimation models rely on historical project data to make informed predictions about software cost and effort.
+
+11. Importance of Assessing Project Feasibility
+   Correct Answer: To determine if the system can be created with available resources and technology and if it aligns with business needs.
+   Explanation: Assessing feasibility ensures that the project is practical and aligns with both technological capabilities and business objectives.
+
+12. Non-Variable in Software Cost and Effort Estimation
+   Correct Answer: Political
+   Explanation: While technical, environmental, and economic factors are considered in estimation, political factors are typically not a primary concern.
+
+13. Meaning of LOC in Software Estimation
+   Correct Answer: Lines of Code
+   Explanation: LOC, or Lines of Code, is a measurement used in software estimation to quantify the size of a software project.
+
+14. Scope of Software
+   Correct Answer: Functions, features, data, performance, constraints, interfaces, and reliability of the software.
+   Explanation: Software scope encompasses various aspects including functions, features, data, performance standards, constraints, interfaces, and reliability.
+
+15. Primary Unit of Work in Agile Development Estimation
+   Correct Answer: User Stories
+   Explanation: In Agile development, user stories are used for effort estimation, focusing on the functional requirements from the end-user perspective.
