@@ -1,0 +1,15 @@
+# Enable tracing for debugging purposes
+Set-PSDebug -Trace 1
+
+try {
+    # Insert all previous script tasks here, but let's introduce an intentional error
+    # Attempt to move a non-existent file to trigger an error
+    Move-Item -Path .\non_existent_file.txt -Destination .\Backup
+} catch {
+    # Handle errors gracefully by displaying a custom error message
+    Write-Host "Oops! Something went wrong: $_"
+} finally {
+    # This block runs regardless of success or failure, like saying goodbye on a date, no matter how bad it was.
+    Write-Host "Script execution completed. Check above for any error messages."
+}
+

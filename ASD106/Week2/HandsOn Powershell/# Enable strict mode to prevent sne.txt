@@ -1,0 +1,18 @@
+# Enable strict mode to prevent sneaky bugs. It's like telling your script to shape up and fly right.
+Set-StrictMode -Version Latest
+
+# Display the current date and time because time travel isn't real... yet.
+Get-Date
+
+# Retrieve a list of running processes and save it to a file named processes.txt
+Get-Process | Out-File -FilePath processes.txt
+
+# Create a new directory named "Backup" in the current location, silently continue if it already exists because we don't sweat the small stuff.
+New-Item -Path .\Backup -ItemType Directory -Force
+
+# Move the file created earlier to the "Backup" directory. It's moving day, but for files.
+Move-Item -Path .\processes.txt -Destination .\Backup
+
+# Display a message indicating the completion of the script, like a pat on the back from your computer.
+Write-Host "Script completed successfully. All tasks done and dusted!"
+

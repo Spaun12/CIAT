@@ -5,7 +5,7 @@ Project Title: University Course Grade Analysis Application
 
 Background: This application is designed to assist university administrators and educators in analyzing the performance of students in various courses. By providing an average grade for each course in a specific term, stakeholders can identify trends, areas for improvement, and the overall effectiveness of the course material and instruction.
 
-Objective: The primary objective is to develop an application that calculates and reports the average grade obtained by students in each course for a given academic term.
+Objective: The main goal is to create a program that can average students' grades for a specific term and then present those results.
 
 Scope Inclusions:
 1. Data Collection: The application will interface with the university's existing database to retrieve relevant data, including course names, student enrolment details, and grades.
@@ -36,7 +36,3 @@ Success Criteria:
 
 References
 Selleo. (2023, Aug 7). How To Write Project Scope In Software Development. Retrieved January 26, 2024, from https://www.selleo.com/blog/how-to-write-project-scope-in-software-development
-
-ScienceSoft. (n.d.). ScienceSoft’s Approach to Defining Project Scope. Retrieved January 26, 2024, from https://www.scnsoft.com/about/scope
-
-Asana. (2022, December 18). How to Write a Project Scope in 8 Easy Steps [2023]. Retrieved January 26, 2024, from https://asana.com/resources/how-to-write-project-scope 

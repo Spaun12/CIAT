@@ -1,0 +1,19 @@
+Week 1 - Assignment Chapters 4 and 5 Takeaway Journal
+
+1) Determining Program to Run for a File in Windows:
+   - File Extension Associations: Windows uses the file extension (e.g., .txt, .jpg) to determine which program to open by referring to a predefined list of extensions and their associated programs in the system's registry.
+   - User Preferences: Windows allows users to set their preferred programs for opening different types of files. Once set, these preferences are used to determine which program to launch.
+
+2) Difference Between `rename` System Call and Copy+Delete:
+   - The `rename` system call is more efficient because it simply updates the file's directory entry to reflect the new name, without physically moving the file's data. Copying and deleting, on the other hand, involves creating a new file with the new name, copying the contents from the old file to the new file, and then deleting the old file. This process is more resource-intensive and increases the risk of data loss if interrupted.
+
+3) Contiguous Allocation and Fragmentation Type:
+   - The fragmentation caused by contiguous allocation is an example of internal fragmentation. It occurs when allocated space is not fully used, leaving unusable gaps. This is similar to memory management scenarios where allocated memory blocks might not be completely filled by the data they store, resulting in wasted space within those blocks.
+
+4) Interrupts, Exceptions/Faults, and Traps:
+   - Interrupts are signals from hardware devices that temporarily divert the processor from its current task to handle an event.
+   - Exceptions/Faults are errors or unexpected conditions that occur during the execution of a program, prompting the system to take corrective action or terminate the offending process.
+   - Traps are intentional interruptions in the execution flow, usually triggered by software to invoke operating system functions or handle special conditions.
+
+5) OS Support for New Device Installation:
+   - Operating systems use device drivers, which are specialized software components that allow the OS to communicate with hardware devices. When a new device is connected, the OS identifies it and loads the appropriate driver, enabling the device to function without the need to recompile the OS. This modular approach allows for easy addition and integration of new hardware.

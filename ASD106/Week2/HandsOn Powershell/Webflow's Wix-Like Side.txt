@@ -1,0 +1,22 @@
+Webflow's Wix-Like Side
+
+-Visual Interface: Webflow provides a drag-and-drop builder and pre-built components, easing website creation without needing extensive coding knowledge. 
+-This resembles Wix's approachability for users of all skill sets.
+-Templates: Like Wix, Webflow offers a vast library of templates to start with, speeding up the initial design process.
+-No-Code/Low-Code Focus: Both platforms emphasize building websites with minimal coding or reliance on heavy developer work.
+
+Webflow's Figma-Like Side
+-Design Control: Webflow offers granular control over every visual element, letting you precisely craft your website's look and feel, much like in Figma.
+-CSS and Layout: Webflow directly integrates with CSS properties (flexbox, grid), giving you the flexibility and power found in design tools like Figma.
+-Responsiveness: Webflow prioritizes building sites that look great across various devices, something vital when considering Figma designs.
+-Interactions & Prototyping: Webflow allows the creation of animations and interactions, giving designs life, similar to the prototyping capabilities of Figma, albeit with a focus on web-based transitions.
+
+The Key Difference: Code & Export
+
+The main distinction between Webflow and its counterparts is in the end product:
+
+-Wix: Primarily focused on getting a website up and live quickly, even if that comes with less customization potential.
+-Figma: Excels in design and prototyping, but those designs then need to be handed off to developers for implementation.
+-Webflow: Bridges this gap, allowing visually built designs to be exported as clean HTML, CSS, and JavaScript code, ready to be deployed as a fully functional website.
+
+In a nutshell, Webflow combines the approachability of Wix with the design depth of Figma, plus the ability to directly export your work into production-ready websites!

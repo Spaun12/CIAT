@@ -1,0 +1,66 @@
+
+Title: NTFSInfo Utility Analysis on Windows 11
+
+Author: [Your Name]
+Date: [Submission Date]
+
+Introduction:
+This report documents the process and results of utilizing the NTFSInfo utility from Sysinternals on a Windows 11 system. The objective was to gain a deeper understanding of the NTFS file system and its associated structures on the C: drive. 
+
+System Preparation:
+A personal computer running Windows 11 was prepared, with internet access secured and administrator privileges confirmed to run command-line utilities.
+
+Process Documentation:
+
+1. Download and Installation:
+   The NTFSInfo utility was downloaded from the official Sysinternals website. [Insert screenshot of the website download section]
+   After the download, the ZIP file was extracted to the following path: C:\Users\mdcte\Downloads\SysinternalsSuite. [Insert screenshot of the extracted files]
+
+2. Execution of NTFSInfo:
+   The utility was run from the command prompt, initiated from the extraction path. [Insert screenshot of the command prompt with NTFSInfo command]
+
+Analysis of NTFSInfo Output:
+
+The following observations were made from the NTFSInfo utility output:
+
+1. Volume Information:
+   - Volume Size: The drive has a total volume size of 81,032 MB, with 20,744,447 total clusters and 1,479,5184 free clusters, resulting in 57,793 MB of free space, equating to 71% of the drive.
+
+2. Allocation Size:
+   - Bytes per Sector: Each sector has 512 bytes.
+   - Bytes per Cluster: Each cluster has 4,096 bytes.
+
+3. Master File Table (MFT) Information:
+   - MFT Size: The MFT occupies 262 MB, which is less than 1% of the total drive volume.
+   - MFT Start Cluster: The MFT begins at cluster 786432.
+
+[Insert screenshot of the first NTFSInfo utility output]
+
+4. Consistent Results Across Multiple Runs:
+   The NTFSInfo utility was run three times to verify the consistency of the data retrieved. The results were consistent in each instance, with the "Bytes per MFT record" and "MFT zone size" fields consistently reporting as 0, which could indicate an inability of the utility to read these specific values from the system.
+
+[Insert screenshots of the second and third NTFSInfo utility outputs]
+
+Discussion:
+
+1. Partition Structure and File System Details:
+   The observed partition layout indicates a single volume, which simplifies the data storage and organization. The allocation size suggests a balance between efficient space usage and system performance, typical for NTFS systems.
+
+2. NTFS File System Features and Metadata:
+   The NTFS file system's metadata, including the MFT, is essential for file storage and retrieval. Although some metadata details such as "Bytes per MFT record" and "MFT zone size" could not be analyzed due to them being reported as zero, the utility provided sufficient information to understand the critical aspects of the file system.
+
+3. Anomalies in Utility Output:
+   The anomalies observed, specifically the zero values for certain MFT attributes, were consistently present across multiple executions of the utility. This suggests a limitation in the NTFSInfo utility or a system-specific configuration that prevents the reading of these attributes. The consistency of these anomalies is important to note, as it may affect the interpretation of the file system's structure.
+
+Conclusion:
+
+Understanding the NTFS file system structure and the organization of the hard drive is paramount for efficient file management and data storage. The NTFSInfo utility provides valuable insights, despite some limitations in reading certain metadata attributes. Reflecting on the utility's output and recognizing these limitations is crucial for system administrators and software developers, as it aids in developing a comprehensive understanding of the underlying file system that supports system performance, reliability, and security.
+
+Further Actions:
+
+It is recommended to seek additional documentation or future utility updates that might explain or resolve the anomalies encountered in this analysis. Furthermore, comparing the results with other file system analysis tools could provide a broader understanding and possibly different perspectives on the NTFS structure.
+
+Attachments:
+- Screenshot of NTFSInfo download from Sysinternals website
+- Screenshot of extracted NTFSInfo utility
+- Screenshots of NTFSInfo utility outputs (three instances)

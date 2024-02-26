@@ -1,0 +1,13 @@
+While Figma is fantastic for design, its export focus differs slightly from tools like Wix or Webflow:
+
+- Design Focus: Figma's primary strength lies in creating UI/UX designs, mockups, and prototypes. It's a tool for visualizing how a website or app should look and function.
+
+Exporting Designs, Not Fully Functional Sites:  Figma exports assets exquisitely:
+
+- Images: You can export individual elements or entire screens in formats like PNG, JPG, SVG.
+- Design Specs: Figma's handoff tools allow developers to see CSS properties, measurements, and other crucial design details.
+- Limited Prototypes: While you can create clickable prototypes in Figma, they are simulations of the user experience, not fully deployable web environments.
+- The Handoff:   Figma is a crucial first step but  generally requires development knowledge to turn designs into live websites:
+
+Developers take your Figma design files and use HTML, CSS, and JavaScript to build the actual functionality of the website or app.
+Some plugins help bridge this gap, but may have limitations compared to Webflow's direct code generation.

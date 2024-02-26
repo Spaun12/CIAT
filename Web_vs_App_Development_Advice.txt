@@ -1,0 +1,39 @@
+Current area with booming growth and high pay for people breaking into the tech industry.
+
+1. AI Engineer
+2. Full-stack developer
+3. Cloud computing
+4. Data Scientist
+5. Junior iOS developer 
+6. Technical Sales Engineer
+7. Product Manager
+8. Cybersecurity Analyst
+9. UI/UX researcher
+10. Web developer and My college has a Bachelors in software development 
+
+Web Development Degree
+- Directly Relevant Roles:
+  - Full-stack Developer: This role involves both client-side and server-side programming, which a web development degree directly prepares you for.
+  - Web Developer: Specializing in web development positions you perfectly for roles focusing on creating and maintaining websites.
+
+- Partially Relevant Roles:
+  - UI/UX Researcher: While primarily focused on design and user research, a strong understanding of web technologies can significantly benefit this role.
+  - Technical Sales Engineer & Product Manager: Both roles benefit from a deep understanding of web technologies, which you would gain from this degree. However, they also require additional skills in sales, marketing, or product management.
+
+App Development Degree
+- Directly Relevant Roles:
+  - Junior iOS Developer: If the program covers iOS (using Swift or Objective-C), it aligns perfectly with this role. Similarly, if it includes Android development (using Java or Kotlin), it prepares you for Android app development positions.
+
+- Partially Relevant Roles:
+  - Product Manager: Having a background in app development is valuable for managing app products, from conceptualization to launch and beyond.
+  - Technical Sales Engineer: Understanding the technical aspects of mobile applications can be a significant advantage in roles that involve selling tech solutions or products.
+
+Considering Other Roles on Your List:
+- AI Engineer and Data Scientist: These roles require specialized knowledge in machine learning, data analysis, and possibly deep learning, which may not be covered extensively in web or app development degrees. Interested individuals often pursue additional coursework, certifications, or self-study in these areas.
+- Cloud Computing: Both web and app development can involve deploying applications to the cloud, so a foundational understanding will be beneficial. However, roles specializing in cloud computing might require deeper knowledge of specific cloud platforms and services.
+- Cybersecurity Analyst: This specialized field requires knowledge of security protocols, threat detection, and network security, which might not be the focus of web or app development degrees. Additional certifications or courses in cybersecurity are typically pursued by those interested in this path.
+
+Summary
+The choice between a web development or app development degree should be guided by your career interests. If you're passionate about creating interactive websites, dynamic web applications, or working closely with web technologies, the web development degree is more aligned with your goals. Conversely, if you're intrigued by the prospect of building mobile applications, working with iOS or Android platforms, and focusing on mobile technologies, the app development degree would be a better fit.
+
+Both degrees offer solid foundations for a career in tech, but given the specificity of some roles on this list, you might consider supplementing your education with additional learning or certifications targeted towards those specific areas. Always keep an eye on how the tech landscape evolves and be prepared to continuously learn and adapt your skills accordingly.

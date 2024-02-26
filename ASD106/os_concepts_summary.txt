@@ -1,0 +1,6 @@
+
+1) Windows determines the program to open a file with either through file extension associations or user preferences.
+2) Using `rename` is more efficient than copying and deleting because it simply updates the file's name without moving data.
+3) Contiguous allocation leads to internal fragmentation, where space within allocated blocks is wasted because it is not fully used.
+4) Interrupts are hardware signals requiring immediate attention, exceptions/faults are program errors needing correction, and traps are software-initiated interrupts for system functions.
+5) The OS uses device drivers to communicate with new hardware, allowing easy installation without recompiling the OS.
