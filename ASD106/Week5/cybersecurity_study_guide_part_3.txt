@@ -1,0 +1,20 @@
+
+Question 11
+What is a common tool used for testing the security of a computer system by throwing unexpected inputs at programs?
+Correct Answer: Fuzzer
+Explanation: A fuzzer is a common tool used to test the security of computer systems by providing unexpected or random inputs to programs. This can help identify vulnerabilities that could be exploited by attackers.
+
+Question 12
+What is an example of a hardware resource that needs protection?
+Correct Answer: Printers
+Explanation: Printers are an example of a hardware resource that needs protection within a network. They can be targeted by attackers to gain access to sensitive documents or to launch attacks within a network.
+
+Question 13
+Which type of attack involves an adversary sniffing network traffic and attempting to break the encryption to access the data?
+Correct Answer: Passive attack
+Explanation: A passive attack involves monitoring or sniffing network traffic without altering it. This involves eavesdropping rather than actively manipulating the data.
+
+Question 14
+The core security properties that need to be protected against attackers and eavesdroppers are referred to as:
+Correct Answer: CIA (Confidentiality, Integrity, Availability) triad
+Explanation: The core security properties that need protection are referred to as the CIA triad, which stands for Confidentiality, Integrity, and Availability. These principles are fundamental to understanding and implementing cybersecurity measures.

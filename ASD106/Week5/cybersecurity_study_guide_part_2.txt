@@ -1,0 +1,25 @@
+
+Question 6
+What is the downside of adding more features to a computer system?
+Correct Answer: Increased complexity and more security errors
+Explanation: Adding more features to a computer system often results in increased complexity, which can lead to more security vulnerabilities and errors. This is because more code can introduce additional potential points of failure or exploitation.
+
+Question 7
+Why are current computer systems not being replaced with more secure systems?
+Correct Answer: Users are unwilling to abandon their current systems
+Explanation: The primary reason current computer systems are not replaced with more secure systems is the reluctance of users to abandon their existing systems. This is due to factors like familiarity, cost of transition, and the embeddedness of current systems in daily operations.
+
+Question 8
+What term is used to refer to people who try to break into computer systems without authorization?
+Correct Answer: Crackers
+Explanation: The term "crackers" specifically refers to individuals who break into computer systems without authorization, often with malicious intent. Unlike hackers, crackers are typically focused on circumventing security for nefarious purposes.
+
+Question 9
+Which statement about ACL entries is correct?
+Correct Answer: ACL entries grant rights based on user ownership
+Explanation: Access Control List (ACL) entries typically grant rights based on user ownership or identity, allowing for detailed specification of access rights for different users or groups to resources within a system.
+
+Question 10
+How is the matrix of protection domains and objects typically stored?
+Correct Answer: By columns in an Access Control List
+Explanation: The matrix of protection domains and objects in a computer system is typically represented in an Access Control List (ACL) format, organized by columns. This approach allows for the efficient management and enforcement of access controls.

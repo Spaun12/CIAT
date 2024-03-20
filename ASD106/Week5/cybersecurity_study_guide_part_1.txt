@@ -1,0 +1,25 @@
+
+Question 1
+What are botnets commonly used for in cybercriminal activities?
+Correct Answer: Spreading malware and redirecting traffic
+Explanation: Botnets, networks of infected computers controlled by a malicious actor, are commonly used in cybercriminal activities to spread malware and redirect internet traffic. This can lead to a range of malicious activities, including DDoS attacks, spam campaigns, and financial theft.
+
+Question 2
+What is the potential consequence of a cyber attack on a waste management system?
+Correct Answer: Spillage of raw sewage into parks and waters
+Explanation: A cyber attack on a waste management system can lead to the mishandling or misdirection of waste flows, resulting in environmental hazards such as the spillage of raw sewage into parks and water bodies, posing health risks and environmental damage.
+
+Question 3
+What is the term used to describe a computer under the control of an attacker?
+Correct Answer: Zombie
+Explanation: A computer under the control of an attacker is often referred to as a "zombie." This term highlights the computer's role in a botnet, performing tasks under remote command without the owner's knowledge.
+
+Question 4
+What are some motivations for attackers to compromise a system?
+Correct Answer: All of these
+Explanation: Attackers may have a variety of motivations for compromising a system, including theft, hacktivism, vandalism, terrorism, cyberwarfare, espionage, spam, extortion, and fraud. This wide range of motivations covers almost every imaginable purpose behind cyber attacks.
+
+Question 5
+Which of the following is NOT a security principle used by the operating system?
+Correct Answer: Direct execution of all operations
+Explanation: The principle of direct execution of all operations is not a security principle used by operating systems. Instead, operating systems rely on principles like privilege separation, the principle of least privilege (POLA), and isolation of security domains to enhance security.
