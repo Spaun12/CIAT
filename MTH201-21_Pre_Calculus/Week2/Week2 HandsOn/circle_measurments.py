@@ -1,4 +1,5 @@
-#Michael Connell Jr.
+# Michael Connell Jr.
+# Week2 HandsOn - Circle Measurements
 
 import pandas as pd
 import numpy as np
