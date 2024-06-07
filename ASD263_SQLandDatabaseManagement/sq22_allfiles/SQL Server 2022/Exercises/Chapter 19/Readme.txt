@@ -1,0 +1,1 @@
+For this chapter, most of the exercises don't ask the reader to save any files, so solutions aren't available for those exercises.

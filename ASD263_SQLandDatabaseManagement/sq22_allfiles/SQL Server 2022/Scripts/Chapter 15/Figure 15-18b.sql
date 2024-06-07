@@ -1,0 +1,4 @@
+USE AP;
+
+INSERT IBM_Invoices
+VALUES ('RA23988', '2023-03-09', 417.34);

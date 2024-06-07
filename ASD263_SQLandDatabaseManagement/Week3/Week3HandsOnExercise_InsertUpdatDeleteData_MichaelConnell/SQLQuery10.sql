@@ -1,0 +1,1 @@
+--Run the CreateMurachCollege.sql script.

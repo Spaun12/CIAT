@@ -1,0 +1,5 @@
+USE New_AP;
+
+CREATE TABLE Vendors7
+(VendorID        INT NOT NULL PRIMARY KEY,
+VendorName       VARCHAR(50) NOT NULL);

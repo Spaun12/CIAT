@@ -1,0 +1,1 @@
+SELECT CONVERT(varchar, SERVERPROPERTY('collation'));

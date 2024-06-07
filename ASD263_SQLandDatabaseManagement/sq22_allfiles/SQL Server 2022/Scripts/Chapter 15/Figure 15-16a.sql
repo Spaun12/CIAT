@@ -1,0 +1,12 @@
+USE AP;
+
+DROP TRIGGER IF EXISTS Vendors_INSERT_UPDATE;
+GO
+
+CREATE TRIGGER Vendors_INSERT_UPDATE
+    ON Vendors
+    AFTER INSERT,UPDATE
+AS
+    UPDATE Vendors
+    SET VendorState = UPPER(VendorState)
+    WHERE VendorID IN (SELECT VendorID FROM Inserted);
