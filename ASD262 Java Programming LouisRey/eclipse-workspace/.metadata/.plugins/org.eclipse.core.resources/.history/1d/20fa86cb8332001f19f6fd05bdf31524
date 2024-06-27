@@ -1,0 +1,10 @@
+package week1HandsOnExercise_StudentRegistration_MichaelConnell;
+
+public class StudentRegistration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
